@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Lucida Sans Unicode Regular';
+    src: url('../fonts/Lucida Sans Unicode Regular.eot');
+    src: url('../fonts/Lucida Sans Unicode Regular.eot?iefix') format('eot');
+    src: url('../fonts/Lucida Sans Unicode Regular.woff') format('woff');
+    src: url('../fonts/Lucida Sans Unicode Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0; 
+    color: white;
+    transition: all .1s ease-in;
+}
+body {
+    background-color: #3399CC;
+    border: 20px solid #2B81AC;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Lucida Sans Unicode Regular', sans-serif;
+}
+header {
+    background-color: #3399CC;
+    margin-top: 0;
+    width: 100%;
+    height: 80px;
+    font-size: 34px;
+    padding-top: 30px;
+    padding-left: 100px;
+    margin-bottom: 20px;
+}
+footer {
+    width: 900px;
+    height: 80px;
+    padding-bottom: 30px;
+    font-size: 18px;
+}
+.title {
+    width: 900px;
+    margin-left: 100px;
+}
+.footer {
+    margin-top: 20px;
+    width: 900px;
+    padding-left: 0;
+}
+.container {
+    font-size: 0;
+    border: 3px solid white;
+    width: 900px;   
+}
+.container div {
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border: 3px solid white;
+    padding: 10px;
+    width: 25%;
+}
+.wi {
+    font-size: 30px;
+}
+.blue.one-half-size, .rose.one-half-size {
+    width: 50%;
+}
+.violet.full-size {
+    width: 100%;
+}
+.blue {
+   background-color: #3399CC;
+}
+.light-blue {
+    background-color: #33CCCC;
+}
+.purple {
+    background-color: #996699;
+}
+.red {
+    background-color: #C24747;
+}
+.orange {
+    background-color: #E2674A;
+}
+.yellow {
+    background-color: #FFCC66;
+}
+.lime {
+    background-color: #99CC99;
+}
+.light-green {
+    background-color: #669999;
+}
+.rose {
+    background-color: #CC6699;
+}
+.green {
+    background-color: #339966;
+}
+.violet {
+    background-color: #666699;
+}
+.temperature {
+    opacity: 0.8;
+}
+.box:hover {
+    opacity: 1;
+}
+.container:hover .box:not(:hover) {
+    opacity: 0.5;
+}
