@@ -1,6 +1,9 @@
+// @TODO: body должен быть одним из первых, после *
+
 header {
     background: #ffffff;
     height: 175px;
+    // @TODO: зачем обнулять маржин?
     margin-bottom: 0px;
     width: 800px;
     margin-top: 0px;
@@ -8,6 +11,7 @@ header {
     padding-bottom: 10px;
 }
 body {
+    // @TODO: что за свойство такое?
     align: center;
     width: 800px;
     height: 100%;
@@ -19,6 +23,7 @@ body {
     font-size: 20px;
 }
 .container {
+    // @TODO: что за магическая точно величина ??
     height: 200.94px;
     background: #ffffff;
 }

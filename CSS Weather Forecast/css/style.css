@@ -21,6 +21,7 @@ body {
     border: 20px solid #2B81AC;
     margin: 0;
     display: flex;
+    // @TODO: можно или давать flex-wrap или flex-direction: column (лучше второй вариант)
     flex-wrap: wrap;
     font-family: 'Lucida Sans Unicode Regular', sans-serif;
 }
@@ -63,6 +64,8 @@ footer {
     padding: 10px;
     width: 25%;
 }
+
+// @TODO classnames
 .wi {
     font-size: 30px;
 }
