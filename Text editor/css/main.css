@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/proximanova-regular/proximanova-regular.eot');
+  src: url('../fonts/proximanova-regular/proximanova-regular.eot') format('eot'),
+  url('../fonts/proximanova-regular/proximanova-regular.woff') format('woff'),
+  url('../fonts/proximanova-regular/ProximaNova-Regular.woff2') format('woff2'),
+  url('../fonts/proximanova-regular/proximanova-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: 'PlayfairDisplay';
+  src: url('../fonts/PlayfairDisplay-Regular/PlayfairDisplay-Regular.eot');
+  src: url('../fonts/PlayfairDisplay-Regular/PlayfairDisplay-Regular.eot') format('eot'),
+  url('../fonts/PlayfairDisplay-Regular/PlayfairDisplay-Regular.woff') format('woff'),
+  url('../fonts/PlayfairDisplay-Regular/PlayfairDisplay-Regular.woff2') format('woff2'),
+  url('../fonts/PlayfairDisplay-Regular/PlayfairDisplay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: 'FuturaPTHeavy';
+  src: url('../fonts/FuturaPTHeavy/FuturaPTHeavy.eot');
+  src: url('../fonts/FuturaPTHeavy/FuturaPTHeavy.eot') format('eot'),
+  url('../fonts/FuturaPTHeavy/FuturaPTHeavy.woff') format('woff'),
+  url('../fonts/FuturaPTHeavy/FuturaPT-Heavy.woff2') format('woff2'),
+  url('../fonts/FuturaPTHeavy/FuturaPTHeavy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #181818;
+}
+
+.main-wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #464f54;
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+/*search-block stilization*/
+
+.search-block {
+  height: 190px;
+  width: 876px;
+  background-color: #181818;
+  color: #fefefe;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  padding-top: 46px;
+  padding-left: 64px;
+}
+
+.search-block__title {
+  font-family: 'ProximaNova', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #777;
+  letter-spacing: 3px;
+}
+
+input {
+  height: 50px;
+  background-color: #181818;
+  color: #fefefe;
+  border: none;
+  font-size: 48px;
+  font-family: 'PlayfairDisplay', serif;
+}
+
+::-webkit-input-placeholder {color:#fefefe;}
+::-moz-placeholder          {color:#fefefe;}/* Firefox 19+ */
+:-moz-placeholder           {color:#fefefe;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#fefefe;}
+
+.search-block__line {
+  background-color: #303030;
+  width: 816px;
+  height: 3px;
+  position: absolute;
+  top: 180px;
+  right: 0;
+}
+
+/*icon-block stilization*/
+
+.icon-block {
+  height: 78px;
+  width: 812px;
+  background-color: #f7bd2c; 
+  position: absolute;
+  top: 240px;
+  right: 0;
+  padding-top: 20px;
+}
+
+.fa {
+  background-color: #f7bd2c;
+  color: #fefefe;
+  font-size: 50px; 
+}
+
+.icon-block__btn-text {
+  font-size: 32px;
+  color: #fefefe;
+  font-weight: bold;
+  background-color: #f7bd2c;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+button {
+  border: none;
+  margin-right: 30px;
+  opacity: 0.5;
+}
+
+button:first-child {
+  margin-left: 50px;
+}
+button:hover {
+  opacity: 1;
+}
+
+/*article-wrapper stilization;*/
+
+.article-wrapper {
+  background-color: #fff;
+  width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 27px;
+  font-family: 'Georgia Regular';
+  padding-left: 124px;
+  padding-right: 124px;
+  padding-top: 204px;
+  padding-bottom: 30px;
+}
+
+.article-author {
+  font-family: 'ProximaNova', sans-serif;
+  font-size: 20px;
+  color: #bfbfbf;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-family: 'FuturaPTHeavy', sans-serif;
+  font-size: 78px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-top: 16px;
+}
+.article-subtitle {
+  font-family: 'Georgia Regular';
+  font-style: italic;
+  font-size: 30px;
+  color: #8f8f8f;
+  margin-bottom: 60px;
+}
+
+p {
+  margin-bottom: 40px;
+  text-align: justify;
+}
+
+#article-wrapper__line {
+  width: 3px;
+  min-height: 1123px;
+  background-color: #e8eced;
+  position: absolute;
+  top: 150px;
+  left: 138px;
+}
