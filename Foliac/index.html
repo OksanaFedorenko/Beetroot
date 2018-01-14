@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Foliac</title>
+  <link rel="stylesheet" href="styles/font-awesome.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+</head>
+<body>
+    <!--main-screen-->
+  <div class="main-screen">
+    <header class="header wrapper">
+      <div class="header__logo">
+        <a href="/">
+          <img src="img/logo.png" alt="logo">
+        </a>
+      </div>
+      <nav class="header__nav nav">
+        <a class="nav__link nav__link--active" href="#">Accueil</a>
+        <a class="nav__link" href="#gallery">Portfolio</a>
+        <a class="nav__link" href="#">About</a>
+        <a class="nav__link" href="#">Contact</a>
+      </nav>
+    </header>
+    <section class="main-section wrapper">
+      <h1 class="main-section__title">voici votre prochain portfolio</h1>
+      <p class="main-section__text">un template psd simple et gratuit</p>
+      <button class="btn btn--green main-section__btn">mes travaux</button>
+    </section>
+  </div> 
+   <!--main screen-->
+   <!--gallery-->
+  <section id="gallery" class="section-gallery gallery">
+    <div class="gallery__btn-controls btn-controls">
+      <button class="btn-controls__btn btn-controls__btn--active">Tous les projets</button>
+      <button class="btn-controls__btn">Webdesign</button>
+      <button class="btn-controls__btn">UI/UX design</button>
+      <button class="btn-controls__btn">Illustration</button>
+      <button class="btn-controls__btn">Motion design</button>
+    </div>
+    <div class="gallery__list wrapper">
+      <div class="gallery__column">
+        <div class="gallery__item gallery__item--size-1">
+          <img src="img/multiple items.png" alt="img-1">
+            <div class="gallery__item-overlay overlay">
+              <div>
+                <p class="overlay__title">Forest app</p>
+                <p class="overlay__subtitle">application mobile</p>
+              </div>
+            </div>
+        </div>
+        <div class="gallery__item gallery__item--size-2">
+          <img src="img/Place me inside PSD.png">
+          <div class="gallery__item-overlay overlay">
+            <div>
+              <p class="overlay__title">Forest app</p>
+              <p class="overlay__subtitle">application mobile</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="gallery__column gallery__column--large">
+      <div class="gallery__item gallery__item--size-3">
+        <img src="img/identite visuelle.png">
+        <div class="gallery__item-overlay overlay">
+          <div>
+            <p class="overlay__title">Forest app</p>
+            <p class="overlay__subtitle">application mobile</p>
+          </div>
+        </div>
+      </div>
+    <div class="gallery__item gallery__item--size-4">
+      <img  src="img/prototype.png">
+      <div class="gallery__item-overlay overlay">
+        <div>
+          <p class="overlay__title">Forest app</p>
+          <p class="overlay__subtitle">application mobile</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+  <section class="man-computer">
+    <div class="man-computer-description">
+      <p class="name-profession">
+        <span class="man-computer-name">Michel Dupont</span><br>
+          Webdesigner, illustrateur, auteur
+      </p>
+      <p class="man-computer-text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum placeat necessitatibus labore eos excepturi blanditiis repudiandae cupiditate numquam suscipit, nobis alias, facilis obcaecati reiciendis nihil? Ipsam cupiditate quas voluptatem reprehenderit, accusantium iure voluptates eligendi consequuntur maiores perspiciatis quis, minus accusamus placeat sunt nulla dolor! Ex quod consequuntur autem, facere illum vero quo.    
+      </p>
+      <button class="btn--gray btn">Me contacter</button>
+    </div>
+  </section>
+   <!--/gallery-->
+   <!--Form-->
+    <section class="section-form"> 
+      <div class="section-form__wrapper">
+        <p class="section-form__title">
+           Me contacter
+        </p>
+      <form class="section-form__form form">
+        <div class="form__row">
+          <div class="form__field form__field--small">
+        <span class="form__icon-field">
+            <i class="fa fa-user" aria-hidden="true"></i>
+        </span>
+          <input type="text" placeholder="Votre nom">
+          </div>
+        <div class="form__field form__field--small">
+          <span class="form__icon-field">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </span>
+          <input type="text" placeholder="Votre email">
+        </div>
+           </div>
+            <div class="form__field form__field--textarea">
+              <span class="form__icon-field form__icon-field--textarea">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+              </span>
+              <textarea placeholder="Votre message"></textarea>
+            </div>
+            <button class="form__btn">Envoyer</button>
+          </form>
+        </div>
+      </section>
+      <!-- / Form --> 
+      <button class="btn-up">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+      </button>
+            <!--Footer-->
+      <footer>
+       
+            <div class="footer-wrapper1">
+               <p class="footer-text">Copyright © 2015 by beneggen - 
+                 <a href="http://beneggen.fr">www.beneggen.fr</a>
+               </p>
+            </div>
+            <div class="footer-wrapper2">
+              <div class="icon-wrapper">
+                <a class="social" href="#"><div class="footer__icon twitter"><i class="fa fa-twitter fa-lg" aria-hidden="true"></div></i></a>
+                <a class="social" href="#"><div class="footer__icon linkedin"><div class="in-icon"><i class="fa fa-linkedin" aria-hidden="true"></i></div></div></a>
+                <a class="social" href="#"><div class="footer__icon dribbble"><i class="fa fa-dribbble fa-lg" aria-hidden="true"></i></div></a>
+                <a class="social" href="#"><div class="footer__icon behance"><i class="fa fa-behance fa-lg" aria-hidden="true"></i></div></a>
+              </div>
+            </div>
+
+      </footer>
+</body>
+</html>
