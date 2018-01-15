@@ -1,0 +1,101 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/* Header stilization*/
+
+.header-wrapper {
+  background-color: #23232e;
+  min-height: 850px;
+  color: #fff;
+  padding-top: 80px;
+
+}
+
+.header__logo {
+  width: 136px;
+  margin: 0 auto;
+  margin-bottom: 155px;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+ }
+
+.header-text {
+  text-align: center;
+}
+
+.header-paragraf {
+  font-size: 18px;
+}
+
+.header-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: #23232e;
+  color: #fff;
+  font-size: 24px;
+  margin-top: 186px;
+  padding-top: 12px;
+}
+
+/*Main stilization*/
+
+main {
+  background: url(./../img/bg.png) center no-repeat;
+  color: #464b4f;
+}
+
+.main-paragraf {
+  max-width: 854px;
+  margin: 0 auto;
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 120px;
+}
+
+h2 {
+  font-size: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 90px;
+}
+
+.todo-paragraf {
+  max-width: 290px;
+  display: inline-block;
+  margin-right: 25px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.todo-paragraf:last-child {
+  margin-right: 0;
+}
+
+.paragrafs-wrapper {
+  max-width: 930px;
+  margin: 0 auto;
+  margin-bottom: 124px;
+  display: flex;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 42px;
+}
