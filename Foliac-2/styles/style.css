@@ -431,7 +431,7 @@ body {
   
 .btn-up {
   position: fixed;
-  bottom: 50px;
+  bottom: 100px;
   right: 50px;
   width: 50px;
   height: 50px;
@@ -456,8 +456,8 @@ footer {
   display: flex;
   color: #fff;
 }
+
 .footer-wrapper {
-  padding-right: 0;
   display: flex;
 }
 
@@ -480,12 +480,12 @@ a {
   height: 20px;
   margin-right: 20px;
   text-align: center;
+  top: 100px;
+  right: -340px;
 }
-.icon-wrapper {
-  max-width: 50%;
-  margin-top: 100px;
-  margin-left: 300px;
 
+.icon-wrapper {
+  width: 50%;
 }
 
 .footer__icon:before {
