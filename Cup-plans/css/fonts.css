@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Lato Light';
+  src: url('../fonts/Lato Light/Lato-Light.eot');
+  src: url('../fonts/Lato Light/Lato-Light.eot') format('eot'),
+  url('../fonts/Lato Light/Lato-Light.woff') format('woff'),
+  url('../fonts/Lato Light/Lato-Light.woff2') format('woff2'),
+  url('../fonts/Lato Light/Lato-Light.otf') format('otf'),
+  url('../fonts/Lato Light/Lato-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: 'Miso Regular';
+  src: url('../fonts/Miso/miso-regular.eot');
+  src: url('../fonts/Miso/miso-regular.eot') format('eot'),
+  url('../fonts/Miso/Miso.woff') format('woff'),
+  url('../fonts/Miso/miso-regular.woff2') format('woff2'),
+  url('../fonts/Miso/Miso.otf') format('otf'),
+  url('../fonts/Miso/miso-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: 'Miso Bold';
+  src: url('../fonts/Miso Bold/miso-bold.eot');
+  src: url('../fonts/Miso Bold/miso-bold.eot') format('eot'),
+  url('../fonts/Miso Bold/Miso-Bold.woff') format('woff'),
+  url('../fonts/Miso Bold/miso-bold.woff2') format('woff2'),
+  url('../fonts/Miso Bold/Miso-Bold.otf') format('otf'),
+  url('../fonts/Miso Bold/miso-bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}

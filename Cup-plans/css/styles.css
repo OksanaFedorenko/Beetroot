@@ -1,0 +1,70 @@
+@import url('./fonts.css');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #191919;
+}
+
+.container {
+  width: 1200px;
+  height: 600px;
+  background-color: #fdde7e;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 50px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-wrapper {
+  width: 31.5%;
+  min-height: 442px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-wrapper:hover {
+  align-self: stretch;
+  transition: all 0.5s ease-in-out;
+  justify-content: center;
+}
+
+.item {
+  width: 100%;
+  height: 442px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.price {
+  font-family: 'Miso Bold', sans-serif;
+  font-size: 70px;
+  color: #02995b;
+}
+
+.title {
+  font-family: 'Miso Regular', sans-serif;
+  font-size: 50px;
+  color: #333333;
+}
+
+.subtitle {
+  font-family: 'Lato Light', sans-serif;
+  font-size: 20px;
+  color: #4e4e4e;
+  text-align: center;
+}
