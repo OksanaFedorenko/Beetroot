@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Daily Form</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="form-container">
+      <div class="form__img"><img src="img/sign-up-icon.svg" alt="img"></div>
+      <p class="form__title">Create your free account</p>
+      <p class="form__text">
+        Come and join our cool and amazing community, fill in
+        your details to get started. Already have account?
+        <a href="#">Log in.</a>
+      </p>
+      <form class="form" action="" method="post">
+        <div class="form__field form__field--small">
+          <input type="text" name="f-name" placeholder="First name" maxlength="20">
+        </div> 
+        <div class="form__field form__field--small">
+          <input type="text" name="l-name" placeholder="Last name" maxlength="30">
+        </div>
+        <div class="form__field">
+          <input type="email" name="email" placeholder="Email address" maxlength="50" required="required">
+        </div>
+        <div class="form__field">
+          <input type="password" name="pw" placeholder="Password" maxlength="8">
+        </div>
+        <button class="form__btn" type="submit">Sign up for free</button> 
+      </form>
+      <p class="form__text2">
+        By klicking on "Sign up for free", you agree to the
+        <a href="#">Therms of Service</a> and the
+        <a href="#">Privacy Policy</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
