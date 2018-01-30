@@ -1,0 +1,63 @@
+.header {
+  max-width: 1500px;
+  min-height: 120px;
+  padding-top: 40px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 767px) {
+      padding: 0;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 480px) {
+      padding: 0;
+      flex-wrap: wrap;
+    }
+  }
+  &__site-title {
+    @include size(100%, auto);
+    font-family: 'Roboto Black', sans-serif;
+    color: $black;
+    font-size: 48px;
+    line-height: 27px;
+    font-weight: 900;
+    @media (max-width: 320px) {
+      font-size: 40px;
+    }
+  }
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+    @include size(60%, auto);
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    @media (max-width: 767px) {
+      margin-top: 30px;
+      margin-left: 20px;
+    }
+    @media (max-width: 480px) {
+      margin-top: 30px;
+      margin-left: 20px;
+    }
+    @media (max-width: 320px) {
+      margin-top: 30px;
+      margin-left: 40px;
+      margin-bottom: 20px;
+    }
+    &-link1 {
+      margin-right: 42px;
+      @include link2($black);            
+    }
+    &-link2 {
+      @include link2($black);
+      margin-right: 32px;
+    }
+    &-btn {
+      @include size(26px, 26px);
+      font-size: 20px;
+      border: none;
+      @include button($lightGray, $black);
+    }
+  }
+}

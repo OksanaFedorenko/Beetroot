@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:900');
+
+.slider {
+  max-width: 1200px;
+  min-height: 576px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0px;
+  background: rgb(255,255,255);
+  background: -moz-radial-gradient(60% 50% circle cover closest-side, rgba(255,255,255,1) 5%, rgba(238,238,238,1) 70%);
+  background: -webkit-radial-gradient(60% 50% circle cover closest-side, rgba(255,255,255,1) 5%,rgba(238,238,238,1) 70%);
+  background: radial-gradient(circle closest-side at 60% 50%, rgba(255,255,255,1) 5%,rgba(238,238,238,1) 70%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=1 );
+  &__info {
+    max-width: 630px;
+  }
+  &__title {
+    font-size: 11vw;
+    width: 100%;
+    height: auto;
+    max-width: 630px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    text-align: right;
+    letter-spacing: 4px;
+  }
+  &__description {
+    max-width: 630px;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: 'Roboto Light', sans-serif;
+    text-align: right;
+    @media (max-width: 320px) {
+     text-align: center;
+     padding-right: 10px;
+    }
+  }
+  &__link {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Roboto Bold', sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+    @include link($red);
+  }
+  &__img {
+    margin-right: 72px;
+    img {
+    width: 100%;
+    height: auto;
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  width: 1200px;
+  justify-content: center;
+  margin-bottom: 100px;
+  &__item {
+    @include pagination($black, $red);
+    margin-right: 12px;
+    margin-top: 64px;
+    cursor: pointer;
+    &:last-child {
+      margin-right: 0px;
+    }
+    &--active {
+      background-color: $red;
+    }
+  }
+}

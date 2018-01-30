@@ -1,0 +1,15 @@
+.footer {
+  height: 70px;
+  &__text {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 34px;
+    font-family: 'Raleway Regular', sans-serif;
+    color: $gray;
+    a {
+      @include link2($black);
+    }
+  }
+}
