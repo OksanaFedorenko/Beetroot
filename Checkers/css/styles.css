@@ -1,0 +1,51 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.checker-board {
+  width: 600px;
+  height: 600px;
+  background-color: #AA5500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checker-field {
+  display: flex;
+  flex-wrap: wrap;
+  width: 560px;
+  height: 560px;
+  background-color: #EACCA6; 
+}
+
+.board__square {
+  width: 70px;
+  height: 70px;
+  position: relative;
+}
+
+.square__black {
+  background-color: black;
+}
+
+.checker-brown:after,
+.checker-white:after {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  top: 10%;
+  left: 10%;
+}
+
+.checker-brown:after {
+  background: #7C5C35;
+}
+
+.checker-white:after {
+  background: #EEF9E9;
+}
