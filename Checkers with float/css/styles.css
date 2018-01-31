@@ -5,18 +5,17 @@
 }
 
 .checker-field {
-  display: flex;
-  flex-wrap: wrap;
   width: 600px;
   height: 600px;
-  background-color: #EACCA6; 
-  border: 20px solid #7C5C35;
+  background-color: #EACCA6;
+  border: 20px solid #7C5C35; 
 }
 
 .board__square {
   width: 70px;
   height: 70px;
   position: relative;
+  float: left;
 }
 
 .square__black {
