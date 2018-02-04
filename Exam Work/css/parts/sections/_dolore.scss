@@ -1,0 +1,31 @@
+.dolore {
+  background: url("./../img/Layer 15.jpg");
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat; 
+  background-position: center;
+  font-family: 'Lato', sans-serif;
+  &__description {
+    max-width: 570px;
+  }
+  &__title {
+    padding-top: 120px;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 90px;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    font-weight: 100;
+    font-size: 22px;
+    line-height: 28px;
+    padding-bottom: 65px;
+  }
+  &__link {
+    //color: $white;
+    font-size: 18px;
+    text-decoration: underline;
+    @include link($white, $blue);
+  }
+}

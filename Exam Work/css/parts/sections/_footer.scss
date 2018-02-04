@@ -1,0 +1,94 @@
+.footer {
+  background: url("./../img/bg.jpg") no-repeat center;
+  background-size: cover;
+  height: 802px;
+  color: $white;
+  &__title {
+    font-family: 'Raleway', sans-serif;
+    @include text(35px, $white);
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    padding-top: 115px;
+    height: 220px;
+    &:after {
+      position: absolute;
+      content: "";
+      width: 90px;
+      height: 1px;
+      background-color: $white;
+      bottom: 0;
+      left: calc(50% - 45px);
+    }
+  }
+  &__socials {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    display: flex;
+    justify-content: center;
+  }
+  &__icon {
+    color: $white;
+    font-size: 30px;
+    margin-right: 30px;
+    @include link($white, $blue);
+    &:last-of-type {
+      margin-right: 0;
+    }
+  
+  }
+}
+  
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 680px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    &__field {
+      width: 100%;
+      margin-bottom: 70px;
+      height: 50px;
+      border-bottom: 2px solid $lightGray;
+      &--small {
+        width: calc((100% - 56px) / 2);
+      }
+      input {
+        background-color: transparent;
+        border: none;
+        padding-left: 30px;
+        color: $white;
+        @include placeholder($gray1, 1, 18px, 'Lato' sans-serif);
+        @include placeholder2($gray1, 0, 18px, 'Lato' sans-serif);
+      }
+      textarea {
+        background-color: transparent;
+        border: none;
+        padding: 20px 200px 10px 30px;
+        color: $white;
+        @include placeholder($gray1, 1, 18px, 'Lato' sans-serif);
+        @include placeholder2($gray1, 0, 18px, 'Lato' sans-serif);
+      }
+    }
+    &__btn {
+      width: 186px;
+      height: 60px;
+      background-color: transparent;
+      border: 2px solid $white;
+      @include text(24px, $white);
+      &--wrapper {
+        width: 100%;
+        height: 60px; 
+        display: flex;
+        justify-content: center;
+        }
+      &:hover {
+       color: $blue;
+       border-color: $blue;
+   }
+  }
+  }
+
+ 

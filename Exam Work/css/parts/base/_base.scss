@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300i,400,400i,700|Raleway:400,700');
+
+body {
+  min-width: 320px;
+  max-width: 1600px;
+  overflow-x: hidden;
+  color: $white;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
