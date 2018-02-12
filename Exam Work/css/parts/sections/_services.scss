@@ -1,5 +1,7 @@
 .services {
   color: $black;
+  //height: 740px;
+  width: 100%;
   &__title {
     height: 220px;
     font-family: 'Raleway', sans-serif;
@@ -27,18 +29,20 @@
     margin-bottom: 115px;
     align-items: baseline;
     width: 100%;
-    max-width: 1200px;
+    min-height: 440px;
   }
   &__item {
-    width: calc((100% - 60px) / 3);
+    max-width: calc((100% - 60px) / 3);
+    //height: 100%;
     font-size: 16px;
     font-family: 'Lato', sans-serif;
+    padding: 0 25px;
+    //flex-shrink: 0;
   }
   &__img {
-    max-width: 192px;
     margin: 0 auto;
     img {
-      margin: 0 auto;
+     margin: 0 auto;
     }
    }
   &__subtitle {
@@ -46,21 +50,13 @@
     font-size: 20px;
     text-align: center;
     margin-bottom: 42px;
-    width: 100%;
+    //max-width: 100%;
     position: relative;
-    a {
-      font-weight: 700;
-      color: $black;
-    }
-    a:hover {
-      text-decoration: underline;
-      transition: all 0.3s ease-in-out;
-    }
   }
   &__text {
     text-align: center;
     line-height: 30px;
-    width: 100%;
+    //max-width: 100%;
   }
     
 }

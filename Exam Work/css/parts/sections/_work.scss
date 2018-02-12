@@ -1,5 +1,6 @@
 .work {
   height: 950px;
+  width: 100%;
   &__title {
   font-family: 'Raleway', sans-serif;
   @include text(35px, $black);
@@ -23,13 +24,16 @@
     justify-content: space-between;
     padding-top: 90px;
     margin-bottom: 80px;
+    width: 100%;
   }
   &__item {
     overflow: hidden;
     position: relative;
+    max-width: calc((100% - 60px) / 3);
     img {
       width: 100%;
       height: auto;
+      object-fit: cover;
     }
     &-overlay {
       position: absolute;
@@ -70,12 +74,22 @@
     }
   }
 
-
-.overlay__title {
+.overlay {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lato', sans-serif;
+  @include text(22px, $white);
+  text-align: center;
+  justify-content: center;
+  &__title {
+    margin-bottom: 30px;
+  }
+}
+/*.overlay__title {
   font-family: 'Lato', sans-serif;
   @include text(22px, $white);
   text-align: center;
   padding-top: 172px;
   padding-bottom: 38px;
   
-}
+}*/

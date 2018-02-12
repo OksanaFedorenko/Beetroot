@@ -60,6 +60,7 @@
         border: none;
         padding-left: 30px;
         color: $white;
+        outline: none;
         @include placeholder($gray1, 1, 18px, 'Lato' sans-serif);
         @include placeholder2($gray1, 0, 18px, 'Lato' sans-serif);
       }
@@ -68,6 +69,7 @@
         border: none;
         padding: 20px 200px 10px 30px;
         color: $white;
+        outline: none;
         @include placeholder($gray1, 1, 18px, 'Lato' sans-serif);
         @include placeholder2($gray1, 0, 18px, 'Lato' sans-serif);
       }

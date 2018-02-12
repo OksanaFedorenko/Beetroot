@@ -3133,6 +3133,7 @@ body {
     }*/
 .work {
   height: 950px;
+  width: 100%;
 }
 
 .work__title {
@@ -3162,16 +3163,19 @@ body {
   justify-content: space-between;
   padding-top: 90px;
   margin-bottom: 80px;
+  width: 100%;
 }
 
 .work__item {
   overflow: hidden;
   position: relative;
+  max-width: calc((100% - 60px) / 3);
 }
 
 .work__item img {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .work__item-overlay {
@@ -3222,16 +3226,29 @@ body {
   color: #222;
 }
 
-.overlay__title {
+.overlay {
+  display: flex;
+  flex-direction: column;
   font-family: 'Lato', sans-serif;
   font-size: 22px;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 172px;
-  padding-bottom: 38px;
+  justify-content: center;
 }
 
+.overlay__title {
+  margin-bottom: 30px;
+}
+
+/*.overlay__title {
+  font-family: 'Lato', sans-serif;
+  @include text(22px, $white);
+  text-align: center;
+  padding-top: 172px;
+  padding-bottom: 38px;
+  
+}*/
 .dolore {
   background: url("./../img/Layer 15.jpg");
   height: 500px;
@@ -3352,6 +3369,7 @@ body {
   border: none;
   padding-left: 30px;
   color: #fff;
+  outline: none;
 }
 
 .form__field input::-webkit-input-placeholder {
@@ -3432,6 +3450,7 @@ body {
   border: none;
   padding: 20px 200px 10px 30px;
   color: #fff;
+  outline: none;
 }
 
 .form__field textarea::-webkit-input-placeholder {
@@ -3531,6 +3550,7 @@ body {
 
 .services {
   color: #222;
+  width: 100%;
 }
 
 .services__title {
@@ -3562,17 +3582,17 @@ body {
   margin-bottom: 115px;
   align-items: baseline;
   width: 100%;
-  max-width: 1200px;
+  min-height: 440px;
 }
 
 .services__item {
-  width: calc((100% - 60px) / 3);
+  max-width: calc((100% - 60px) / 3);
   font-size: 16px;
   font-family: 'Lato', sans-serif;
+  padding: 0 25px;
 }
 
 .services__img {
-  max-width: 192px;
   margin: 0 auto;
 }
 
@@ -3585,23 +3605,11 @@ body {
   font-size: 20px;
   text-align: center;
   margin-bottom: 42px;
-  width: 100%;
   position: relative;
-}
-
-.services__subtitle a {
-  font-weight: 700;
-  color: #222;
-}
-
-.services__subtitle a:hover {
-  text-decoration: underline;
-  transition: all 0.3s ease-in-out;
 }
 
 .services__text {
   text-align: center;
   line-height: 30px;
-  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
