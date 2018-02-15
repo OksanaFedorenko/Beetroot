@@ -1,6 +1,5 @@
 .services {
   color: $black;
-  //height: 740px;
   width: 100%;
   &__title {
     height: 220px;
@@ -30,33 +29,45 @@
     align-items: baseline;
     width: 100%;
     min-height: 440px;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
   }
   &__item {
     max-width: calc((100% - 60px) / 3);
-    //height: 100%;
     font-size: 16px;
     font-family: 'Lato', sans-serif;
     padding: 0 25px;
-    //flex-shrink: 0;
+    @media (max-width: 767px) {
+      max-width: 100%;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
   }
   &__img {
     margin: 0 auto;
+    margin-bottom: 42px;
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
     img {
      margin: 0 auto;
     }
    }
   &__subtitle {
-    margin-top: 42px;
+    //margin-top: 42px;
     font-size: 20px;
     text-align: center;
     margin-bottom: 42px;
-    //max-width: 100%;
-    position: relative;
+   // position: relative;
+    font-weight: bold;
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
   }
   &__text {
     text-align: center;
     line-height: 30px;
-    //max-width: 100%;
   }
     
 }

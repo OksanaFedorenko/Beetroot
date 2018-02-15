@@ -1,6 +1,9 @@
 .work {
-  height: 950px;
+  height: auto;
   width: 100%;
+  /*@media (max-width: 480px) {
+    height: auto;
+  }*/
   &__title {
   font-family: 'Raleway', sans-serif;
   @include text(35px, $black);
@@ -25,11 +28,20 @@
     padding-top: 90px;
     margin-bottom: 80px;
     width: 100%;
+    @media (max-width: 480px) {
+      flex-direction: column;
+      //justify-content: space-between;
+    }
   }
   &__item {
     overflow: hidden;
     position: relative;
     max-width: calc((100% - 60px) / 3);
+    @media (max-width: 480px) {
+      max-width: 80%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
     img {
       width: 100%;
       height: auto;
@@ -60,6 +72,7 @@
     width: 370px;
     height: 60px;
     margin: 0 auto;
+    color: $black;
     border: 2px solid $black;
     @include text(24px, $black);
     text-align: center;
@@ -67,12 +80,9 @@
     font-family: 'Lato', sans-serif;
     cursor: pointer;
     @include link2($black, $blue);
-    a {
-      color: $black;
-      }
-      
-    }
+    margin-bottom: 115px;  
   }
+}
 
 .overlay {
   display: flex;

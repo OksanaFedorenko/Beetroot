@@ -3096,24 +3096,26 @@ body {
   margin-bottom: 250px;
 }
 
-.header__btn-wrapper {
-  width: 95px;
-  height: 95px;
+.header__link-wrapper {
   margin: 0 auto;
-}
-
-.header__btn {
-  font-size: 60px;
-  border-radius: 50%;
-  border: 3px solid;
-  padding-top: 18px;
   width: 95px;
   height: 95px;
   background-color: transparent;
+}
+
+.header__link-round {
+  font-size: 60px;
+  width: 95px;
+  height: 95px;
+  border: 3px solid;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+  padding-top: 16px;
   color: #8099a4;
 }
 
-.header__btn:hover {
+.header__link-round:hover {
   border-color: #005494;
   color: #005494;
 }
@@ -3132,8 +3134,11 @@ body {
       margin-bottom: 20px;
     }*/
 .work {
-  height: 950px;
+  height: auto;
   width: 100%;
+  /*@media (max-width: 480px) {
+    height: auto;
+  }*/
 }
 
 .work__title {
@@ -3166,10 +3171,24 @@ body {
   width: 100%;
 }
 
+@media (max-width: 480px) {
+  .work__item-wrapper {
+    flex-direction: column;
+  }
+}
+
 .work__item {
   overflow: hidden;
   position: relative;
   max-width: calc((100% - 60px) / 3);
+}
+
+@media (max-width: 480px) {
+  .work__item {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }
 
 .work__item img {
@@ -3206,6 +3225,7 @@ body {
   width: 370px;
   height: 60px;
   margin: 0 auto;
+  color: #222;
   border: 2px solid #222;
   font-size: 24px;
   color: #222;
@@ -3215,15 +3235,12 @@ body {
   font-family: 'Lato', sans-serif;
   cursor: pointer;
   color: #222;
+  margin-bottom: 115px;
 }
 
 .work__link:hover {
   color: #005494;
   border-color: #005494;
-}
-
-.work__link a {
-  color: #222;
 }
 
 .overlay {
@@ -3250,25 +3267,51 @@ body {
   
 }*/
 .dolore {
-  background: url("./../img/Layer 15.jpg");
+  background: url("./../img/dolore-bg.jpg");
   height: 500px;
   width: 100%;
   object-fit: cover;
   background-repeat: no-repeat;
-  background-position: center;
   font-family: 'Lato', sans-serif;
+  position: relative;
+}
+
+@media (max-width: 680px) {
+  .dolore {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    background-repeat: repeat;
+  }
 }
 
 .dolore__description {
-  max-width: 570px;
+  max-width: 50%;
+}
+
+@media (max-width: 1024px) {
+  .dolore__description {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 680px) {
+  .dolore__description {
+    max-width: 100%;
+  }
 }
 
 .dolore__title {
   padding-top: 120px;
   font-weight: 400;
   font-size: 45px;
-  line-height: 90px;
   text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .dolore__title {
+    padding-top: 50px;
+  }
 }
 
 .dolore__subtitle {
@@ -3288,6 +3331,18 @@ body {
   color: #005494;
   transform: scale(1.3);
   transition: all 0.3s ease-in-out;
+}
+
+.dolore__img-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 18%;
+}
+
+@media (max-width: 1024px) {
+  .dolore__img-wrapper {
+    right: 10%;
+  }
 }
 
 .footer {
@@ -3594,6 +3649,12 @@ body {
   min-height: 440px;
 }
 
+@media (max-width: 767px) {
+  .services__item-wrapper {
+    flex-direction: column;
+  }
+}
+
 .services__item {
   max-width: calc((100% - 60px) / 3);
   font-size: 16px;
@@ -3601,8 +3662,23 @@ body {
   padding: 0 25px;
 }
 
+@media (max-width: 767px) {
+  .services__item {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+}
+
 .services__img {
   margin: 0 auto;
+  margin-bottom: 42px;
+}
+
+@media (max-width: 767px) {
+  .services__img {
+    margin-bottom: 20px;
+  }
 }
 
 .services__img img {
@@ -3610,11 +3686,16 @@ body {
 }
 
 .services__subtitle {
-  margin-top: 42px;
   font-size: 20px;
   text-align: center;
   margin-bottom: 42px;
-  position: relative;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .services__subtitle {
+    margin-bottom: 20px;
+  }
 }
 
 .services__text {

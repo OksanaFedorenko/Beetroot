@@ -1,20 +1,35 @@
 .dolore {
-  background: url("./../img/Layer 15.jpg");
+  background: url("./../img/dolore-bg.jpg");
   height: 500px;
   width: 100%;
   object-fit: cover;
   background-repeat: no-repeat; 
-  background-position: center;
+  //background-position: center;
   font-family: 'Lato', sans-serif;
+  position: relative;
+  @media (max-width: 680px) {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    background-repeat: repeat;
+  }
   &__description {
-    max-width: 570px;
+    max-width: 50%;
+    @media (max-width: 1024px) {
+      padding-left: 50px;
+    }
+    @media (max-width: 680px) {
+      max-width: 100%;
+    }
   }
   &__title {
     padding-top: 120px;
     font-weight: 400;
     font-size: 45px;
-    line-height: 90px;
     text-transform: uppercase;
+    @media (max-width: 767px) {
+      padding-top: 50px;
+    }
   }
   &__subtitle {
     font-weight: 100;
@@ -27,5 +42,13 @@
     font-size: 18px;
     text-decoration: underline;
     @include link($white, $blue);
+  }
+  &__img-wrapper {
+    position: absolute;
+    bottom: 0;
+    right: 18%;
+    @media (max-width: 1024px) {
+      right: 10%;
+    }
   }
 }
