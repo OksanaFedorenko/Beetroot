@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Sans+Pro:300,400');
+
+// RESET
+@import "./parts/base/_reset.scss";
+
+ //FONTS
+@import "./parts/base/_fonts.scss";
+@import "./fontawesome-all.min.css";
+//@import "./ionicons.min.scss";
+ //BASE (variables, mixins, colors, helpers, base)
+@import "./parts/base/_colors.scss";
+@import "./parts/base/_helpers.scss";
+@import "./parts/base/_variables.scss";
+@import "./parts/base/_mixins.scss";
+@import "./parts/base/_base.scss";
+// SECTIONS
+@import "./parts/sections/_header.scss";
+@import "./parts/sections/_portfolio.scss";
+@import "./parts/sections/_team.scss";
+@import "./parts/sections/_already.scss";
+@import "./parts/sections/_testimonials.scss";
+@import "./parts/sections/_contact.scss";
+@import "./parts/sections/_footer.scss";

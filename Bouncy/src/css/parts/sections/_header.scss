@@ -1,0 +1,124 @@
+.header {
+    width: 100%;
+    height: 100px;
+    transition: all 0.3s ease-in-out;
+  &--sticky {
+    position: fixed;
+    padding: 0 80px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: $headerBrown;
+    z-index: 100;
+  }
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 74px;
+  }
+  &__logo {
+    a {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  &__nav {
+    width: 330px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    font-size: 16px;
+    a {
+      color: $white;
+      width: 84px;
+      height: 32px;
+      text-align: center;
+      padding-top: 3px;
+      &:hover {
+      border: 1px solid $white;
+      border-radius: 20px;
+      }
+      &.active {
+      border: 1px solid $white;
+      border-radius: 20px;
+      }
+    }
+  }
+}
+
+
+.home {
+  background: url("./../img/background.png") center no-repeat;
+  width: 100%;
+  height: 737px;
+  color: $white;
+  font-family: 'Open Sans', sans-serif;
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+  } 
+  &__title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    margin-bottom: 40px;
+  }
+  &__subtitle {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 220px;
+    max-width: 610px;
+    text-align: center;
+  }
+  &__btn-next {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    background: $green;
+    outline: none;
+    color: $white;
+    padding-bottom: 4px;
+    font-size: 28px;
+  }
+}
+    
+    
+    
+    
+    
+    
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /*@media (max-width: 767px) {
+      margin-top: 30px;
+      margin-left: 20px;
+    }
+    @media (max-width: 480px) {
+      margin-top: 30px;
+      margin-left: 20px;
+    }
+    @media (max-width: 320px) {
+      margin-top: 30px;
+      margin-left: 40px;
+      margin-bottom: 20px;
+    }*/
+ 
