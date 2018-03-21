@@ -1,7 +1,7 @@
 .portfolio {
   background-color: $lightGray;
   width: 100%;
-  min-height: 1410px;
+  //min-height: 1410px;
   color: $textGray;
   font-family: 'Open sans', sans-serif;
   padding-top: 90px;
@@ -23,7 +23,7 @@
   }
 }
 
-.grid-item1 {
+/*.grid-item1 {
   width: 270px;
   height: 361px;
 }
@@ -70,7 +70,7 @@
 .grid-item12 {
   width: 270px;
   height: 301px;
-}
+}*/
 
 .grid {
   //margin: 0 auto;
@@ -78,6 +78,7 @@
 .grid-sizer,
 .grid-item { 
   width: 25%;
+  min-width: 150px; /*установить ширину элемента, чтобы картинки перепрыгивали при сужении экрана*/
 }
 .grid-item {
   margin-bottom: 10px;

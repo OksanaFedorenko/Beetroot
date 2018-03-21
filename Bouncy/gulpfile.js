@@ -23,7 +23,7 @@ gulp.task('html', function () {
 
 //Task for SASS
 gulp.task('css', function () {
-  return gulp.src('./src/css/**/*.scss')
+  return gulp.src('./src/css/main.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./build/css'));
 });
@@ -41,6 +41,8 @@ gulp.task('js', () => {
   gulp.src([
     './node_modules/jquery/dist/jquery.js',
     './node_modules/slick-carousel/slick/slick.js',
+    './node_modules/masonry-layout/dist/masonry.pkgd.min.js',
+    './node_modules/isotope-layout/dist/isotope.pkgd.min.js',
     './src/js/main.js'
   ])
     .pipe(concat('main.js'))

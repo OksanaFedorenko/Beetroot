@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Sans+Pro:300,400");
 @import url(./fontawesome-all.min.css);
 *,
@@ -163,57 +164,59 @@ body {
     margin: 0 auto;
     margin-bottom: 80px; }
 
-.grid-item1 {
+/*.grid-item1 {
   width: 270px;
-  height: 361px; }
-
+  height: 361px;
+}
 .grid-item2 {
   width: 270px;
-  height: 229px; }
-
+  height: 229px;
+}
 .grid-item3 {
   width: 270px;
-  height: 301px; }
-
+  height: 301px;
+}
 .grid-item4 {
   width: 270px;
-  height: 361px; }
-
+  height: 361px;
+}
 .grid-item5 {
   width: 270px;
-  height: 361px; }
-
+  height: 361px;
+}
 .grid-item6 {
   width: 270px;
-  height: 344px; }
-
+  height: 344px;
+}
 .grid-item7 {
   width: 270px;
-  height: 374px; }
-
+  height: 374px;
+}
 .grid-item8 {
   width: 270px;
-  height: 269px; }
-
+  height: 269px;
+}
 .grid-item9 {
   width: 270px;
-  height: 209px; }
-
+  height: 209px;
+}
 .grid-item10 {
   width: 270px;
-  height: 357px; }
-
+  height: 357px;
+}
 .grid-item11 {
   width: 270px;
-  height: 255px; }
-
+  height: 255px;
+}
 .grid-item12 {
   width: 270px;
-  height: 301px; }
-
+  height: 301px;
+}*/
 .grid-sizer,
 .grid-item {
-  width: 25%; }
+  width: 25%;
+  min-width: 150px;
+  /*установить ширину элемента, чтобы картинки перепрыгивали при сужении экрана*/ }
 
 .grid-item {
   margin-bottom: 10px; }
