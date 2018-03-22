@@ -39,23 +39,26 @@ $(document).ready(function () {
 
 
   $('.grid').masonry({
-    //itemSelector: '.grid-item',
+    itemSelector: '.grid-item',
     //columnWidth: 270,
-    //gutter: 10,
+    gutter: 10,
+    percentPosition: true,
+    horizontalOrder: true,
+    transitionDuration: '0.2s'
   });
 
-  $('.grid').isotope({
+  /*$('.grid').isotope({
     // options
     itemSelector: '.grid-item',
     layoutMode: 'fitRows',
     percentPosition: true,
-    masonry: {
-      //columnWidth: '.grid-sizer',
+    /*masonry: {
+      columnWidth: '.grid-sizer',
       gutter: 10,
       //horizontalOrder: true
       columnWidth: 270
-    }
-  });
+    }*/
+  /*});*/
 
   var $grid = $('.grid').isotope({
   });
@@ -90,6 +93,8 @@ $(document).ready(function () {
     infinite: true
   });
 
+
+
   //SLIDER 2
   $('#slider2').slick({
     dots: true,
@@ -117,5 +122,5 @@ function initMap() {
     },
     title: 'Beetroot!'
   });
+};
 
-}

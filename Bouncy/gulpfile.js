@@ -4,14 +4,7 @@ var sass = require('gulp-sass');
 var watch = require('gulp-watch');
 var concat = require('gulp-concat');
 var minify = require('gulp-minify');
-//var rigger = require('gulp-rigger');
 
-// Task for Rigger
-//gulp.task('rigger', function () {
-//  gulp.src('./src/**/*.html')
-//    .pipe(rigger())
-//    .pipe(gulp.dest('./build'));
-//});
 
 // Task for HTML
 gulp.task('html', function () {
@@ -56,6 +49,8 @@ gulp.task('js', () => {
     .pipe(gulp.dest('./build/js'))
   //.pipe(reload({ stream: true }));
 });
+
+
 
 /* Task Build */
 gulp.task('build', ['html', 'css', 'js', 'fonts']);

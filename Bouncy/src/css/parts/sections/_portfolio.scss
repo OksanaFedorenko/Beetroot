@@ -1,7 +1,7 @@
 .portfolio {
   background-color: $lightGray;
   width: 100%;
-  //min-height: 1410px;
+  min-height: 1410px;
   color: $textGray;
   font-family: 'Open sans', sans-serif;
   padding-top: 90px;
@@ -23,66 +23,22 @@
   }
 }
 
-/*.grid-item1 {
-  width: 270px;
-  height: 361px;
-}
-.grid-item2 {
-  width: 270px;
-  height: 229px;
-}
-.grid-item3 {
-  width: 270px;
-  height: 301px;
-}
-.grid-item4 {
-  width: 270px;
-  height: 361px;
-}
-.grid-item5 {
-  width: 270px;
-  height: 361px;
-}
-.grid-item6 {
-  width: 270px;
-  height: 344px;
-}
-.grid-item7 {
-  width: 270px;
-  height: 374px;
-}
-.grid-item8 {
-  width: 270px;
-  height: 269px;
-}
-.grid-item9 {
-  width: 270px;
-  height: 209px;
-}
-.grid-item10 {
-  width: 270px;
-  height: 357px;
-}
-.grid-item11 {
-  width: 270px;
-  height: 255px;
-}
-.grid-item12 {
-  width: 270px;
-  height: 301px;
-}*/
-
 .grid {
   //margin: 0 auto;
 }
-.grid-sizer,
+//.grid-sizer,
 .grid-item { 
   width: 25%;
   min-width: 150px; /*установить ширину элемента, чтобы картинки перепрыгивали при сужении экрана*/
 }
 .grid-item {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}
+
 .filter-button-group {
   max-width: 370px;
   display: flex;

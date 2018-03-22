@@ -34,20 +34,13 @@
   &__text-wrap {
     width: 372px;
     text-align: right;
+    max-height: 364px;
+    overflow-y: auto;
+    padding-right: 20px;
   }
   &__slider-name {
     font-size: 20px;
     color: $black;
-    position: relative;
-    &:after {
-      position: absolute;
-      content: "";
-      width: 3px;
-      height: 40px;
-      background: $green;
-      top: 5px;
-      right: -45px;
-    }
   }
   &__slider-profession {
     text-transform: uppercase;
