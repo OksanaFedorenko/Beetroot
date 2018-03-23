@@ -36,6 +36,7 @@ gulp.task('js', () => {
     './node_modules/slick-carousel/slick/slick.js',
     './node_modules/masonry-layout/dist/masonry.pkgd.min.js',
     './node_modules/isotope-layout/dist/isotope.pkgd.min.js',
+    './node_modules/jquery.nicescroll/dist/jquery.nicescroll.min.js',
     './src/js/main.js'
   ])
     .pipe(concat('main.js'))

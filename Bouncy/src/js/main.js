@@ -37,6 +37,22 @@ $(document).ready(function () {
     })
   };
 
+  // change navigation active class oncroll
+  function onScroll(event) {
+    let scrollPos = $(document).scrollTop();
+    $('.header__nav a').each(function () {
+      let currLink = $(this);
+      let refElement = $(currLink.attr("href"));
+      if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+        $('.header__nav a').removeClass("active");
+        currLink.addClass("active");
+      } else {
+        currLink.removeClass("active");
+      }
+    });
+  }
+  $(document).on("scroll", onScroll);
+
 
   $('.grid').masonry({
     itemSelector: '.grid-item',
@@ -46,19 +62,6 @@ $(document).ready(function () {
     horizontalOrder: true,
     transitionDuration: '0.2s'
   });
-
-  /*$('.grid').isotope({
-    // options
-    itemSelector: '.grid-item',
-    layoutMode: 'fitRows',
-    percentPosition: true,
-    /*masonry: {
-      columnWidth: '.grid-sizer',
-      gutter: 10,
-      //horizontalOrder: true
-      columnWidth: 270
-    }*/
-  /*});*/
 
   var $grid = $('.grid').isotope({
   });
@@ -93,8 +96,13 @@ $(document).ready(function () {
     infinite: true
   });
 
+  $(".nicescroll-box").niceScroll(".wrap", { cursorcolor: "#19bd9a", cursorwidth: "5px", autohidemode: false });
 
-
+  $("body").niceScroll({
+    cursorcolor: "#19bd9a",
+    cursorwidth: "16px",
+    cursorwidth: "12px"
+  });
   //SLIDER 2
   $('#slider2').slick({
     dots: true,

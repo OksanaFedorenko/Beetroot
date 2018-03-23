@@ -1,10 +1,13 @@
 .header {
     width: 100%;
     height: 100px;
+    position: fixed;
+    top: 0;
     transition: all 0.3s ease-in-out;
+    padding-top: 30px;
   &--sticky {
     position: fixed;
-    padding: 0 80px;
+    padding-top: 10px;
     top: 0;
     left: 0;
     width: 100%;
@@ -13,7 +16,8 @@
     z-index: 100;
   }
   &__wrapper {
-    width: 100%;
+    //padding-top: 50px;
+    max-width: 1200px;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -39,6 +43,8 @@
       height: 32px;
       text-align: center;
       padding-top: 3px;
+      border: 1px solid transparent;
+      border-radius: 20px;
       &:hover {
       border: 1px solid $white;
       border-radius: 20px;
@@ -58,13 +64,16 @@
   height: 737px;
   color: $white;
   font-family: 'Open Sans', sans-serif;
+  padding-top: 90px;
   &__text-wrapper {
+    width: 660px;
+    height: 380px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 600px;
+    height: 737px;
   } 
   &__title {
     font-family: 'Source Sans Pro', sans-serif;
