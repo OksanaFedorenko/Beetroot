@@ -54,6 +54,13 @@ $(document).ready(function () {
   $(document).on("scroll", onScroll);
 
 
+    // show media header navigation
+  $('.header__nav-btn').click(function() {
+    $('.header__nav').toggleClass('header__nav--show');
+    $(this).toggleClass('is-active');
+  });
+  
+
   $('.grid').masonry({
     itemSelector: '.grid-item',
     //columnWidth: 270,
@@ -98,11 +105,12 @@ $(document).ready(function () {
 
   $(".nicescroll-box").niceScroll(".wrap", { cursorcolor: "#19bd9a", cursorwidth: "5px", autohidemode: false });
 
-  $("body").niceScroll({
-    cursorcolor: "#19bd9a",
-    cursorwidth: "16px",
-    cursorwidth: "12px"
-  });
+  //$("body").niceScroll({
+  //  cursorcolor: "#19bd9a",
+  //  cursorwidth: "16px",
+  //  cursorwidth: "12px"
+  //});
+
   //SLIDER 2
   $('#slider2').slick({
     dots: true,

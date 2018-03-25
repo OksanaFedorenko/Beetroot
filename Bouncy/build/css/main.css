@@ -97,6 +97,47 @@ body {
         border: 1px solid #fff;
         border-radius: 20px; }
 
+.header__nav-btn {
+  border: none;
+  border-radius: 3px;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 30px;
+  background-color: transparent; }
+
+.header__nav-btn:hover span {
+  background-color: slateblue; }
+
+.header__nav-btn span {
+  width: 30px;
+  height: 4px;
+  background-color: darkgreen;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out; }
+
+.header__nav-btn.is-active span:first-of-type {
+  transform: rotate(45deg) translateY(10px) translateX(4px); }
+
+.header__nav-btn.is-active span:nth-of-type(2) {
+  opacity: 0;
+  transform: scale(0); }
+
+.header__nav-btn.is-active span:last-of-type {
+  transform: rotate(-45deg) translateY(-10px) translateX(2px); }
+
+.header__nav.header__nav--show {
+  display: block;
+  width: 100%; }
+
+.header__nav.header__nav--show a {
+  display: block;
+  text-align: center;
+  padding: 5px 0; }
+
+.header__nav a:last-of-type {
+  padding-right: 0; }
+
 .home {
   background: url("./../img/background.png") center no-repeat;
   width: 100%;
@@ -119,7 +160,8 @@ body {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 7px;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    text-align: center; }
   .home__subtitle {
     font-size: 16px;
     line-height: 28px;
@@ -172,9 +214,16 @@ body {
     margin: 0 auto;
     margin-bottom: 80px; }
 
+.grid-wrap {
+  width: 100%; }
+
+.grid {
+  margin: 0 auto;
+  width: auto; }
+
 .grid-item {
   width: 25%;
-  min-width: 150px;
+  min-width: 270px;
   /*установить ширину элемента, чтобы картинки перепрыгивали при сужении экрана*/ }
 
 .grid-item {
@@ -232,7 +281,7 @@ body {
     text-align: center;
     margin-bottom: 38px; }
   .team__subtitle {
-    width: 464px;
+    max-width: 464px;
     text-align: center;
     margin: 0 auto;
     line-height: 25px;
@@ -242,14 +291,32 @@ body {
     justify-content: space-between;
     width: 100%;
     padding: 0 118px 0 70px; }
+    @media (max-width: 960px) {
+      .team__slide-wrap {
+        padding: 0 30px; } }
+    @media (max-width: 767px) {
+      .team__slide-wrap {
+        padding: 0 30px;
+        flex-direction: column;
+        align-items: center; } }
   .team__slider-img {
     width: 285px; }
+    .team__slider-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    @media (max-width: 767px) {
+      .team__slider-img {
+        margin-bottom: 20px; } }
   .team__text-wrap {
     width: 372px;
     text-align: right;
     max-height: 364px;
     overflow-y: auto;
     padding-right: 20px; }
+    @media (max-width: 767px) {
+      .team__text-wrap {
+        width: 100%; } }
   .team__slider-name {
     font-size: 20px;
     color: #333b46; }
@@ -394,14 +461,33 @@ body {
     justify-content: space-between;
     background-color: #fff;
     padding: 50px 100px; }
+    @media (max-width: 960px) {
+      .testimonials__slide-wrap {
+        padding: 50px 40px; } }
+    @media (max-width: 767px) {
+      .testimonials__slide-wrap {
+        flex-direction: column; } }
   .testimonials__img {
     width: 130px;
     height: 130px; }
+    @media (max-width: 767px) {
+      .testimonials__img {
+        margin: 0 auto;
+        margin-bottom: 20px; } }
     .testimonials__img img {
-      object-fit: cover; }
+      object-fit: cover;
+      width: 100%; }
   .testimonials__text-wrap {
-    max-width: 770px;
-    text-align: left; }
+    max-width: 770px; }
+    @media (max-width: 1200px) {
+      .testimonials__text-wrap {
+        max-width: 600px; } }
+    @media (max-width: 960px) {
+      .testimonials__text-wrap {
+        max-width: 500px; } }
+    @media (max-width: 767px) {
+      .testimonials__text-wrap {
+        width: 100%; } }
   .testimonials__text {
     line-height: 28px;
     margin-bottom: 30px; }
@@ -420,6 +506,9 @@ body {
   position: absolute;
   bottom: 60px;
   left: calc(50% - 28px); }
+  @media (max-width: 1000px) {
+    .testimonials__slider .slick-dots {
+      bottom: 20px; } }
 
 .testimonials__slider .slick-dots li {
   list-style: none;
