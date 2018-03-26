@@ -32,7 +32,7 @@
     }
   }
   &__nav {
-    width: 330px;
+    width: 380px;
     display: flex;
     justify-content: space-between;
     text-transform: capitalize;
@@ -60,28 +60,29 @@
 .header__nav-btn {
   border: none;
   border-radius: 3px;
-  //display: none;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
-  height: 30px;
+  height: 22px;
   background-color: transparent;
+  outline: none;
 }
 
 .header__nav-btn:hover span {
-  background-color: slateblue;
+  background-color: $green;
 }
 
 .header__nav-btn span {
   width: 30px;
   height: 4px;
-  background-color: darkgreen;
+  background-color: $white;
   border-radius: 2px;
   transition: all 0.3s ease-in-out;
 }
 
 .header__nav-btn.is-active span:first-of-type {
-  transform: rotate(45deg) translateY(10px) translateX(4px);
+  transform: rotate(45deg) translateY(11px) translateX(3px);
 }
 
 .header__nav-btn.is-active span:nth-of-type(2) {
@@ -96,12 +97,14 @@
 .header__nav.header__nav--show {
   display: block;
   width: 100%;
+  padding-top: 20px;
 }
 
 .header__nav.header__nav--show a {
   display: block;
   text-align: center;
   padding: 5px 0;
+  margin: 0 auto 10px;
 }
 
 .header__nav a:last-of-type {
@@ -114,6 +117,23 @@
 
 .header__nav a.active {
   //color: blue;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    min-height: 100px;
+    height: auto;
+    padding: 20px 15px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__nav-btn {
+    display: flex;
+  }
+  .header__wrapper {
+    flex-wrap: wrap;
+  }
 }
 
 .home {
