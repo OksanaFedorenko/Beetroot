@@ -1,0 +1,79 @@
+.choose {
+  background: url("./../img/Rectangle 7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 685px;
+  &__wrapper {
+    width: 100%;
+    height: 685px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__info {
+    width: 535px;
+    height: 445px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  &__photo {
+    width: 535px;
+    height: 445px;
+    position: relative;
+  }
+  &__img1 {
+    position: absolute;
+    top: 0;
+    left: 50px;
+  }
+  &__img2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  &__title {
+    font-family: 'Aleo';
+    font-size: 36px;
+    text-transform: capitalize;
+  }
+  &__text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  a {
+    width: 230px;
+    height: 66px;
+    color: $white;
+    background-color: $blue;font-family: 'Aleo';
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 22px;
+  }
+}
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+

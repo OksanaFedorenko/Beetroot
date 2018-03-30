@@ -1,0 +1,113 @@
+@mixin title ($size: 40px, $weight: 300, $style: italic,$font-family: 'Open sans' sans-serif) {
+  font-size: $size;
+  font-family: $font-family;
+  font-weight: $weight;
+  font-style: $style;
+  &:before {
+    position: absolute;
+    content: "";
+    width: 114px;
+    height: 2px;
+    background: $red;
+    top: -30px;
+    left: calc(50% - 57px);
+  }
+  &:after {
+    position: absolute;
+    content: "";
+    width: 114px;
+    height: 2px;
+    background: $red;
+    bottom: -30px;
+    left: calc(50% - 57px);
+  }
+}
+
+@mixin text ($size: 14px, $color: $black, $text-transform: uppercase) {
+  font-size: $size;
+  color: $color;
+  text-transform: $text-transform;
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin button($color1, $color2) {
+  background-color: $color1;
+  color: $color2;
+    &:hover {
+      background-color: $color2;
+      color: $color1;
+    }
+}
+
+@mixin link($color1) {
+  color: $color1;
+    &:hover {
+      color: darken($color1, 10%);
+    }
+}
+
+@mixin link2($color1) {
+  color: $color1;
+    &:hover {
+      text-decoration: underline;
+    }
+}
+
+@mixin pagination($color1, $color2) {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $color1;
+      &:hover {
+        background-color:$color2;
+      }
+}
+
+@mixin icons($color1, $color2) {
+  background-color: $color1;
+  color: $color2;
+   &:hover {
+     background-color: $color2;
+     color: $color1;
+     transform: scale(1.1);
+   }
+}
+
+@mixin placeholder($color, $opacity: 1, $font-size: 18px, $font-family: 'Raleway SemiBold' sans-serif) {
+  &::-webkit-input-placeholder {
+    color: $color;
+    opacity: $opacity;
+    font-size: $font-size;
+    font-family: $font-family;
+    text-transform: none;
+    font-style: italic;
+  }
+  &:-moz-placeholder {
+    color: $color;
+    opacity: $opacity;
+    font-size: $font-size;
+    font-family: $font-family;
+    text-transform: none;
+    font-style: italic;
+  }
+  &::-moz-placeholder {
+    color: $color;
+    opacity: $opacity;
+    font-size: $font-size;
+    font-family: $font-family;
+    text-transform: none;
+    font-style: italic;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+    opacity: $opacity;
+    font-size: $font-size;
+    font-family: $font-family;
+    text-transform: none;
+    font-style: italic;
+  }
+}

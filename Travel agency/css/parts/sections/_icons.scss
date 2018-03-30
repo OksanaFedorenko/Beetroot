@@ -1,0 +1,34 @@
+.icons {
+  background-color: $darkGray;
+  &__wrapper {
+    display: flex;
+    min-height: 335px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__title {
+    font-family: 'Aleo', sans-serif;
+    font-size: 36px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  &__img {
+    width: 360px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  &__line:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    max-width: 360px;
+    height: 180px;
+    border-radius: 50%;
+    border-top: 2px dotted gray;
+    top: -80px;
+    left: 50%;
+  }
+}

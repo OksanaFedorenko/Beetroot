@@ -1,0 +1,27 @@
+.subscribe-block {
+  max-width: 800px;
+  margin: 0 auto;
+    &__title {
+      font-family: 'Raleway Black', sans-serif;
+      font-size: 48px;
+      line-height: 150px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    &__text {
+      font-family: 'Raleway Regular', sans-serif;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+    &__form {
+      //position: relative;
+      display: flex;
+      max-width: 800px;
+      height: 70px;
+      border: 2px solid red;
+        input {
+          height: 70px;
+        }
+    }
+    }
+}

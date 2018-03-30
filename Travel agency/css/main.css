@@ -1,0 +1,373 @@
+@import url(./pe-icon-7-stroke.css);
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700");
+*,
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer; }
+
+button {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; }
+
+img {
+  display: block; }
+
+input,
+textarea {
+  width: 100%;
+  height: 100%; }
+
+textarea {
+  resize: none; }
+
+/*@font-face {
+   font-family: 'Aleo';
+  src: url('../../../fonts/Aleo-Regular/aleo-regular-webfont.eot');
+  src: url('../../../fonts/Aleo-Regular/aleo-regular-webfont.eot') format('eot'),
+  url('../../../fonts/Aleo-Regular/aleo-regular-webfont.woff') format('woff'),
+  url('../../../fonts/Aleo-Regular/aleo-regular-webfont.woff2') format('woff2'),
+  url('../../../fonts/Aleo-Regular/Aleo-Regular.otf') format('otf'),
+  url('../../../fonts/Aleo-Regular/aleo-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}*/
+@font-face {
+  font-family: 'Aleo';
+  src: url("../../../fonts/Aleo-Regular/aleo-regular-webfont.eot");
+  src: url("../../../fonts/Aleo-Regular/aleo-regular-webfont.eot") format("eot"), url("../../../fonts/Aleo-Regular/aleo-regular-webfont.woff") format("woff"), url("../../../fonts/Aleo-Regular/aleo-regular-webfont.woff2") format("woff2"), url("../../../fonts/Aleo-Regular/Aleo-Regular.otf") format("otf"), url("../../../fonts/Aleo-Regular/aleo-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+/*!
+ * Font Awesome Free 5.0.6 by @fontawesome - http://fontawesome.com
+ * License - http://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  src: url("../webfonts/fa-solid-900.eot");
+  src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900; }
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  color: #fff; }
+
+.container {
+  max-width: 1130px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+.header {
+  background: url("./../img/main-header-bg.jpg") center no-repeat;
+  width: 100%;
+  height: 820px;
+  background-size: cover;
+  position: relative; }
+  .header__wrapper {
+    height: 100%;
+    min-height: 742px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .header__title {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 5px;
+    font-weight: 600;
+    margin-bottom: 10px; }
+  .header__subtitle {
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: capitalize;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    letter-spacing: 7px;
+    margin-bottom: 50px; }
+  .header__search {
+    width: 654px;
+    height: 64px;
+    display: flex;
+    border: 2px solid #fff;
+    margin-bottom: 120px; }
+    .header__search input {
+      font-size: 18px;
+      padding-left: 120px;
+      font-family: 'Josefin Sans', sans-serif;
+      border: none;
+      outline: none; }
+      .header__search input::-webkit-input-placeholder {
+        color: #999;
+        opacity: 1;
+        font-size: 14px;
+        font-family: 3px;
+        text-transform: none;
+        font-style: normal;
+        letter-spacing: 3px; }
+      .header__search input:-moz-placeholder {
+        color: #999;
+        opacity: 1;
+        font-size: 14px;
+        font-family: 3px;
+        text-transform: none;
+        font-style: normal; }
+      .header__search input::-moz-placeholder {
+        color: #999;
+        opacity: 1;
+        font-size: 14px;
+        font-family: 3px;
+        text-transform: none;
+        font-style: normal; }
+      .header__search input:-ms-input-placeholder {
+        color: #999;
+        opacity: 1;
+        font-size: 14px;
+        font-family: 3px;
+        text-transform: none;
+        font-style: normal; }
+    .header__search-btn {
+      min-width: 150px;
+      color: #fff;
+      background-color: #5474fd;
+      font-family: 'Aleo';
+      text-transform: uppercase;
+      font-size: 14px;
+      position: relative;
+      border: none;
+      padding-right: 20px; }
+      .header__search-btn img {
+        position: absolute;
+        top: 20px;
+        right: 16px; }
+  .header__nav {
+    width: 100%;
+    height: 82px;
+    color: white;
+    background-color: #5474fd;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+    .header__nav-wrap {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .header__nav-title {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 24px;
+      text-transform: uppercase; }
+    .header__nav-links {
+      width: 525px;
+      display: flex;
+      justify-content: space-between; }
+      .header__nav-links a {
+        color: #fff;
+        font-family: 'Aleo';
+        text-transform: uppercase; }
+        .header__nav-links a:hover {
+          color: #333; }
+  .header__link-down {
+    display: block;
+    width: 100px;
+    height: 42px;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center; }
+    .header__link-down .pe-7s-angle-down {
+      content: "\e688";
+      color: #fff;
+      font-size: 30px; }
+
+/*@media (max-width: 767px) {
+     margin-top: 30px;
+     margin-left: 20px;
+   }
+   @media (max-width: 480px) {
+     margin-top: 30px;
+     margin-left: 20px;
+   }
+   @media (max-width: 320px) {
+     margin-top: 30px;
+     margin-left: 40px;
+     margin-bottom: 20px;
+   }*/
+.choose {
+  background: url("./../img/Rectangle 7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 685px; }
+  .choose__wrapper {
+    width: 100%;
+    height: 685px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .choose__info {
+    width: 535px;
+    height: 445px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .choose__photo {
+    width: 535px;
+    height: 445px;
+    position: relative; }
+  .choose__img1 {
+    position: absolute;
+    top: 0;
+    left: 50px; }
+  .choose__img2 {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+  .choose__title {
+    font-family: 'Aleo';
+    font-size: 36px;
+    text-transform: capitalize; }
+  .choose__text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    line-height: 26px; }
+  .choose a {
+    width: 230px;
+    height: 66px;
+    color: #fff;
+    background-color: #5474fd;
+    font-family: 'Aleo';
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 22px; }
+
+.icons {
+  background-color: #333; }
+  .icons__wrapper {
+    display: flex;
+    min-height: 335px;
+    justify-content: space-around;
+    align-items: center; }
+  .icons__title {
+    font-family: 'Aleo', sans-serif;
+    font-size: 36px;
+    text-transform: capitalize;
+    text-align: center; }
+  .icons__img {
+    width: 360px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative; }
+  .icons__line:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    max-width: 360px;
+    height: 180px;
+    border-radius: 50%;
+    border-top: 2px dotted gray;
+    top: -80px;
+    left: 50%; }
+
+.spain__bg-wrap1 {
+  background: url("./../img/Rectangle 414.jpg") center no-repeat;
+  width: 100%;
+  min-height: 700px;
+  background-size: cover; }
+.spain__bg-wrap2 {
+  background: url("./../img/Rectangle 4141.jpg") center no-repeat;
+  width: 100%;
+  min-height: 700px;
+  background-size: cover; }
+.spain__xyz {
+  position: relative;
+  height: 700px; }
+.spain__info1 {
+  width: 540px;
+  height: 374px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  position: absolute;
+  bottom: 100px;
+  left: 15px; }
+.spain__info2 {
+  width: 540px;
+  height: 374px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  position: absolute;
+  bottom: 100px;
+  right: 15px; }
+.spain__info1, .spain__info2 {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+.spain__country {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px; }
+.spain__place {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase; }
+.spain__text {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  line-height: 26px; }
+.spain a {
+  width: 230px;
+  height: 66px;
+  background-color: #5474fd;
+  color: #fff;
+  text-align: center;
+  padding-top: 24px;
+  font-family: 'Aleo';
+  font-size: 16px;
+  text-transform: uppercase; }
+
+.reviews {
+  background: url("./../img/Rectangle 4142.jpg") center no-repeat;
+  width: 100%;
+  height: 731px; }
+  .reviews__title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    align-items: center;
+    font-family: 'Aleo';
+    font-size: 36px;
+    text-transform: capitalize; }
+  .reviews__slider {
+    display: flex; }
+  .reviews__info {
+    padding: 60px;
+    background: #333; }
+  .reviews__name {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase; }
+
+.fa-quote-left {
+  font-size: 20px;
+  color: #5474fd; }
+
+/*# sourceMappingURL=main.css.map */

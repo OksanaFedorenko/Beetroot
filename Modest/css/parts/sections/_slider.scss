@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:900');
+
+.slider {
+  max-width: 1200px;
+  min-height: 576px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0px;
+  &__info {
+    max-width: 615px;
+  }
+  &__title {
+    font-size: 150px;
+    max-width: 100%;
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    text-align: right;
+  }
+  &__description {
+    font-size: 24px;
+    line-height: 36px;
+    font-family: 'Roboto Light', sans-serif;
+    text-align: right;
+  }
+  &__link {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Roboto Bold', sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+    @include link($red);
+  }
+  &__img {
+    margin-right: 72px;
+  }
+}
+
+.pagination {
+  display: flex;
+  width: 1200px;
+  justify-content: center;
+  margin-bottom: 100px;
+  &__item {
+    @include pagination($black, $red);
+    margin-right: 12px;
+    margin-top: 64px;
+    cursor: pointer;
+    &:last-child {
+      margin-right: 0px;
+    }
+    &--active {
+      background-color: $red;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.spain {
+  &__bg-wrap1 {
+    background: url("./../img/Rectangle 414.jpg") center no-repeat;
+    width: 100%;
+    min-height: 700px;
+    background-size: cover;
+  }
+  &__bg-wrap2 {
+    background: url("./../img/Rectangle 4141.jpg")center no-repeat;
+    width: 100%;
+    min-height: 700px;
+    background-size: cover;
+  }
+  &__xyz {
+    position: relative;
+    height: 700px;
+  }
+  &__info1 {
+    width: 540px;
+    height: 374px;
+    background-color: rgba(0,0,0,.8);
+    color: $white;
+    position: absolute;
+    bottom: 100px;
+    left: 15px;
+  }
+    &__info2 {
+    width: 540px;
+    height: 374px;
+    background-color: rgba(0,0,0,.8);
+    color: $white;
+    position: absolute;
+    bottom: 100px;
+    right: 15px;
+  }
+  &__info1, &__info2 {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  &__country {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+  }
+    &__place {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+   &__text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  a {
+    width: 230px;
+    height: 66px;
+    background-color: $blue;
+    color: $white;
+    text-align: center;
+    padding-top: 24px;
+    font-family: 'Aleo';
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}
+

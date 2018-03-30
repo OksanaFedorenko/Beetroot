@@ -1,0 +1,14 @@
+// RESET
+@import "./parts/_reset.scss";
+
+// FONTS
+@import "./parts/_fonts.scss";
+@import "./font-awesome.min.css";
+
+// BASE (variables, mixins, colors, helpers, base)
+@import "./parts/_colors.scss";;
+@import "./parts/_mixins.scss";
+@import "./parts/_base.scss";
+
+// SECTIONS
+@import "./sections/_card.scss"

@@ -1,0 +1,90 @@
+.slider {
+  background-color: $darkBlue;
+  width: 686px;
+  height: 391px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 20px 20px;
+  border-radius: 12px;
+  &__logo {
+     width: 65px;
+     height: 33px;;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-around;
+    min-height: 300px;
+  }
+  &__img {
+   display: flex;
+   align-items: center;
+   &-wrap {
+    //width: 329px;
+    //height: 159px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+   }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  &__title {
+    font-family: 'Museo', sans-serif;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    color: $white;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+  &__subtitle {
+    font-family: 'Museo', sans-serif;
+    font-size: 14px;
+    //line-height: 26px;
+    color: $white;
+    text-transform: capitalize;
+    margin-bottom: 24px;
+  }
+  &__rating {
+    color: $white;
+    opacity: .8;
+    margin-bottom: 24px;
+    .fa:hover {
+      color: $yellow;
+    }
+    .fa--active {
+      color: $yellow;
+    }
+  }
+}
+
+select {
+  width: 70px;
+  height: 32px;
+  margin-bottom: 24px;
+  background-color: $darkBlue;
+  border: 1px solid rgba(255,255,255,.4);
+  outline: none;
+  color: $white;
+  position: relative;
+  z-index: 1;
+  &:focus {
+    .hidden {
+      display: none;
+    }
+  }
+  &:after {
+    content: ">";
+    position: absolute;
+    background: $white;
+    width: 15px;
+    height: 12px;
+    top: 50%;
+    right: 10px;
+    z-index: 2;
+  }
+}

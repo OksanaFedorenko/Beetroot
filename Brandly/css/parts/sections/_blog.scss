@@ -1,0 +1,106 @@
+.blog {
+  width: 100%;
+  height: 1048px;
+  padding-top: 78px;
+  &__title {
+    text-align: center;
+    position: relative;
+    margin-bottom: 90px;
+    @include title(40px, 300, italic, 'Open Sans');
+  }
+}
+
+
+
+.slider3 {
+  
+  &__item {
+    max-width: 570px;
+    height: 760px;
+  }
+  &__item-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  &__title {
+    color: red;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  &__subtitle {
+    color: $gray;
+    text-transform: capitalize;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+  }
+  &__text {
+    font-family: 'Open Sans', sans-serif;
+    color: $gray;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 26px 0;
+    border-top: 1px solid $lightGray;
+    border-bottom: 1px solid $lightGray;
+  }
+  &__link {
+    width: 170px;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    border: 1px solid $black;
+    color: $black;
+    text-align: center;
+    padding-top: 14px;
+    @include button($white, $black);
+  }
+}
+
+.slider3 .slider3__item {
+   //width: 100%;
+   //height: 100%;
+ } 
+.slider3 .slider3__item img {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain; }
+
+.slider3 .slick-arrow {
+  position: absolute;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 40px;
+  z-index: 10; }
+  .slider3 .slick-arrow:hover {
+    color: $black; }
+.slider3 .slick-prev {
+  left: -60px; }
+.slider3 .slick-next {
+  right: -50px; }
+
+.fa-chevron-left, .fa-chevron-right {
+  color: $gray;
+  
+  &:hover {
+    color: $black;
+    
+  }
+}
+    

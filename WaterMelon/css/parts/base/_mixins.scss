@@ -1,0 +1,76 @@
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin button($color1, $color2) {
+  background-color: $color1;
+  color: $color2;
+    &:hover {
+      background-color: darken($color1, 10%);
+    }
+}
+
+@mixin link($color1) {
+  color: $color1;
+    &:hover {
+      color: darken($color1, 10%);
+    }
+}
+
+@mixin link2($color1) {
+  color: $color1;
+    &:hover {
+      text-decoration: underline;
+    }
+}
+
+@mixin pagination($color1, $color2) {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $color1;
+      &:hover {
+        background-color:$color2;
+      }
+}
+
+@mixin icons($color1, $color2) {
+  background-color: $color1;
+  color: $color2;
+   &:hover {
+     background-color: $color2;
+     color: $color1;
+   }
+}
+
+@mixin placeholder($color, $opacity: 1, $font-size: 18px, $font-family: 'Raleway SemiBold') {
+  &::-webkit-input-placeholder {
+    color: $color;
+    opacity: $opacity;
+    font-size: $font-size;
+    font-family: $font-family;
+    text-transform: none;
+  }
+  &:-moz-placeholder {
+    color: $color;
+    opacity: $opacity;
+    font-size: $font-size;
+    font-family: $font-family;
+    text-transform: none;
+  }
+  &::-moz-placeholder {
+    color: $color;
+    opacity: $opacity;
+    font-size: $font-size;
+    font-family: $font-family;
+    text-transform: none;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+    opacity: $opacity;
+    font-size: $font-size;
+    font-family: $font-family;
+    text-transform: none;
+  }
+}
