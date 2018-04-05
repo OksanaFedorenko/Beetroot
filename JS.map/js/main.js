@@ -4,7 +4,7 @@
 function square(x) { return x * x; } // возведение в квадрат
 console.log(map(square, [1, 2, 3, 4])); // [1, 4, 9, 16]
 console.log(map(square, [])); // []
-Обрати внимание: функция не должна изменять переданный ей массив:
+//Обрати внимание: функция не должна изменять переданный ей массив:
 
 
 var arr = [1, 2, 3];
@@ -68,12 +68,12 @@ var pricelist = [{
 console.log(map(square, [1, 2, 3, 4])); // [1, 4, 9, 16]
 console.log(map(square, [])); // []*/
 
-//var x = 1000;
-function discount(x) {
+var x = 1000;
+function calcDiscount(x) {
   return x - 0.1 * x;
   console.log(x);
 };
-
+//calcDiscount();
 //discount();
-var y = (map(discount, pricelist.price));
+var y = pricelist.map(calcDiscount, +pricelist.price);
 console.log(y);
