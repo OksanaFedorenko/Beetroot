@@ -1,0 +1,136 @@
+.header {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10px;
+  font-family: 'Open Sans', sans-serif;
+  z-index: 2000;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      color: white;
+    }
+  }
+  &__logo {
+    width: 140px;
+    height: 50px;
+    font-size: 38px;
+    font-weight: bold;
+    display: flex;
+    border: 2px solid white; 
+  }
+  &__logo1 {
+    font-weight: bold;
+    padding: 0 10px;
+    color: gray;
+    background: white;
+  }
+  &__logo2 {
+     font-weight: 300;
+     padding: 0 10px;
+  }
+  &__nav {
+    width: 690px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    a {
+      color: $white;
+    }
+  }
+  &__text {
+    position: absolute;
+    color: $white;
+    top: 30%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    &-title {
+      font-family: 'Lato', sans-serif;
+      font-size: 60px;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    &-subtitle1 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 30px;
+      text-transform: uppercase;
+      font-weight: 300;
+      letter-spacing: 8px;
+      margin-bottom: 20px;
+    }
+    &-subtitle2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 30px;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+    a {
+      display: block;
+      margin: 0 auto;
+      color: $white;
+      width: 200px;
+      height: 60px;
+      border: 1px solid $white;
+      text-transform: uppercase;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 18px;
+      padding-top: 18px;
+      font-weight: 900;
+    }
+  }
+}
+
+.main {
+  width: 100%;
+  height: 1041px;
+}
+
+.gray-layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: $black;
+  opacity: .4;
+  bottom: 5px;
+  left: 0;
+}
+
+.slider .slider__item {
+  width: 100%;
+  height: 100%;
+}
+
+.slider .slider__item img {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+
+ 
+ 
+ /*@media (max-width: 767px) {
+      margin-top: 30px;
+      margin-left: 20px;
+    }
+    @media (max-width: 480px) {
+      margin-top: 30px;
+      margin-left: 20px;
+    }
+    @media (max-width: 320px) {
+      margin-top: 30px;
+      margin-left: 40px;
+      margin-bottom: 20px;
+    }*/
+ 

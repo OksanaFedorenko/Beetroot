@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?,family=Raleway:400,500,700,900');
+
+.header {
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    align-items: center;
+  }
+  &__nav {
+    width: 546px;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__logo {
+    width: 100px;
+    height: 68px;
+    background: #ae8370;
+    position: relative;
+    color: #ae8370;
+    &:before {
+      content: "";
+      position: absolute;
+      top: -25px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 25px solid #ae8370;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -25px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-top: 25px solid #ae8370;
+    }
+  }
+  &__logo-1 {
+      width: 90px;
+      height: 64px;
+      background: #fdf3ce;
+      position: absolute;
+      top: 2px;
+      left: 5px;
+      &:before {
+        content: "";
+        position: absolute;
+        top: -22px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 45px solid transparent;
+        border-right: 45px solid transparent;
+        border-bottom: 22px solid #fdf3ce;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -22px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 45px solid transparent;
+        border-right: 45px solid transparent;
+        border-top: 22px solid #fdf3ce;
+        z-index: 2;
+      }
+  }
+  &__logo-up {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    z-index: 3;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+   &__logo-down {
+     position: absolute;
+     bottom: 13%;
+     left: 22%;
+     z-index: 3;
+     font-size: 23px;
+     font-weight: 900;
+  }
+  &__nav {
+   a {
+    color: #ae8370;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      font-weight: 700;
+    }
+    &:hover:after {
+      position: absolute;
+      content: "";
+      width: calc(100% - 15px);
+      height: 2px;
+      background-color: #ae8370;
+      bottom: -5px;
+      left: 15px;
+      transition: all 0.3s ease-in-out;
+      }
+    &:hover:before {
+     position: absolute;
+     content: "";
+     width: 15px;
+     height: 2px;
+     background-color: #72574b;
+     bottom: -5px;
+     left: 0;
+     transition: all 0.3s ease-in-out;
+    }
+    }
+  }
+}
+    
+    
+    
+    
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /*@media (max-width: 767px) {
+      margin-top: 30px;
+      margin-left: 20px;
+    }
+    @media (max-width: 480px) {
+      margin-top: 30px;
+      margin-left: 20px;
+    }
+    @media (max-width: 320px) {
+      margin-top: 30px;
+      margin-left: 40px;
+      margin-bottom: 20px;
+    }*/
+ 

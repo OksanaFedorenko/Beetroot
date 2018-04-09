@@ -1,0 +1,111 @@
+.testimonials {
+  width: 100%;
+  min-height: 650px;
+  background-color: $lightGray;
+  font-family: 'Open Sans', sans-serif;
+  color: $textGray;
+  font-size: 16px;
+  padding: 80px 0 100px;
+  &__title {
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 20px;
+   text-transform: uppercase;
+   font-weight: 300;
+   color: $black;
+   text-align: center;
+   margin-bottom: 30px;
+  }
+  &__subtitle {
+    width: 460px;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    margin: 0 auto 60px;
+  }
+  &__slider {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  &__slide-wrap {
+    width: 100%;
+    min-height: 316px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $white;
+    padding: 50px 100px;
+     @media (max-width: 960px) {
+      padding: 50px 40px;
+    }
+     @media (max-width: 767px) {
+     flex-direction: column;
+    }
+  }
+  &__img {
+    width: 130px;
+    height: 130px;
+    @media (max-width: 767px) {
+     margin: 0 auto;
+     margin-bottom: 20px;
+    }
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+  &__text-wrap {
+     max-width: 770px;
+     //text-align: left;
+     @media (max-width: 1200px) {
+     max-width: 600px;
+    }
+     @media (max-width: 960px) {
+     max-width: 500px;
+    }
+     @media (max-width: 767px) {
+     width: 100%;
+    }
+  }
+  &__text {
+     line-height: 28px;
+     margin-bottom: 30px;
+  }
+  &__name {
+    color: $green;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  &__profession {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.testimonials__slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 60px;
+  left: calc(50% - 28px);
+  @media (max-width: 1000px) {
+     bottom: 20px;
+    }
+}
+.testimonials__slider .slick-dots li {
+    list-style: none;
+    margin: 0 5px;
+
+ }
+.testimonials .slick-dots li.slick-active button {
+      background-color: $green;
+ }
+  .testimonials__slider .slick-dots button {
+    font-size: 0;
+    outline: none;
+    border: 1px solid $green;
+    background-color: #fff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+ }

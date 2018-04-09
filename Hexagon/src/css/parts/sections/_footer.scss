@@ -1,0 +1,50 @@
+.footer {
+  width: 100%;
+  min-height: 260px;
+  padding: 70px 0;
+  &__logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  &__copyright {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: $textGray;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  &__icons-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  &__icon {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    //color: $white;
+    margin-right: 10px;
+    text-align: center;
+    padding-top: 5px;
+    &-facebook {
+      @include icons($facebookBlue, $white);
+    }
+    &-twitter {
+      @include icons($twitterBlue, $white);
+      padding-left: 1px;
+    }
+    &-linkedin {
+      @include icons($linkedinBlue, $white);
+      padding-top: 4px;
+      padding-left: 1px;
+    }
+    &-instagram {
+      @include icons($instagramBlue, $white);
+    }
+    &-vimeo {
+      @include icons($vimeoBlue, $white);
+      margin-right: 0;
+    }
+  }
+}
