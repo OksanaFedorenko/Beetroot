@@ -1,0 +1,63 @@
+.feature {
+  width: 100%;
+  min-height: 560px;
+  //padding: 80px 74px 150px 340px;
+  color: $black;
+  &__wrapper {
+    width: 100%;
+    min-height: 560px;
+    position: relative;
+  }
+  &__text {
+    width: 310px;
+    height: 520px;
+  }
+  &__subtitle {
+     color: $coral;
+     font-family: 'Segoe Script', sans-serif;
+     font-size: 24px;
+  }
+  &__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  &__description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: $textGray;
+    line-height: 28px;
+  }
+  &__img {
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 3px;
+    }
+  }
+  &__item {
+    width: 370px;
+    height: 520px;
+
+    &-wrap {
+      display: flex;
+      width: 1520px;
+      justify-content: space-between;
+      position: absolute;
+      top: -110px;
+      left: 0;
+    }
+    &-title {
+      font-family: 'Montserrat',
+      sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+    }
+    &-info {
+
+    }
+  }
+
+}

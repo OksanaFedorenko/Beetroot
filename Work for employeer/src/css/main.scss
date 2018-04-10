@@ -1,0 +1,30 @@
+
+
+// RESET
+@import "./parts/base/_reset.scss";
+
+ //FONTS
+@import "./parts/base/_fonts.scss";
+//@import "./fontawesome-all.min.css";
+//@import "./ionicons.min.scss";
+ //BASE (variables, mixins, colors, helpers, base)
+@import "./parts/base/_colors.scss";
+@import "./parts/base/_helpers.scss";
+@import "./parts/base/_variables.scss";
+@import "./parts/base/_mixins.scss";
+@import "./parts/base/_base.scss";
+// SECTIONS
+@import "./parts/sections/_header.scss";
+@import "./parts/sections/_banner.scss";
+@import "./parts/sections/_feature-trip.scss";
+@import "./parts/sections/_convenience.scss";
+@import "./parts/sections/_top-tour.scss";
+@import "./parts/sections/_best-place.scss";
+@import "./parts/sections/_saticfices.scss";
+@import "./parts/sections/_testimonials.scss";
+@import "./parts/sections/_blog.scss";
+@import "./parts/sections/_download.scss";
+@import "./parts/sections/_partners.scss";
+@import "./parts/sections/_subscribe.scss";
+@import "./parts/sections/_message.scss";
+@import "./parts/sections/_footer.scss";

@@ -1,0 +1,50 @@
+.banner {
+  width: 100%;
+  min-height: 980px;
+  background: url('./../img/banner.jpg') center no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  font-family: 'Montserrat', sans-serif;
+  color: $black;
+  font-size: 28px;
+  text-transform: capitalize;
+  line-height: 50px;
+  //text-align: left;
+  &__slogan {
+    font-family: 'Segoe Script', sans-serif;
+    color: $coral;
+    width: 100%;
+  }
+  &__text {
+    width: 100%;
+    margin-bottom: 30px;
+    &-bold {
+      width: 100%;
+      font-weight: 600;
+      font-size: 41px;
+      margin-bottom: 5px;
+    }
+  }
+  &__btn {
+    @include size (170px, 50px);
+    border-radius: 5px;
+    font-family: 'Montserrat',
+    sans-serif;
+    @include button ($coral, $white);
+    border: none;
+    font-weight: bold;
+    position: relative;
+     &:after {
+       position: absolute;
+       content: "\f0da";
+       top: 18px;
+       right: 15px;
+       color: $white;
+       font-family: 'FontAwesome';
+     }
+  }
+}
