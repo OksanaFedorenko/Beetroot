@@ -56,8 +56,15 @@
       text-align: center;
     }
     &-info {
-
+      display: flex;
     }
   }
+  &__rating {
 
+  }
+  &__stars {
+    display: flex;
+    color: $coral;
+    font-size: 20px;
+  }
 }

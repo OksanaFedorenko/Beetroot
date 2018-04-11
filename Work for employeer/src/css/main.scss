@@ -5,8 +5,9 @@
 
  //FONTS
 @import "./parts/base/_fonts.scss";
-//@import "./fontawesome-all.min.css";
-//@import "./ionicons.min.scss";
+@import "./../css/font-awesome.min.css";
+@import "./../css/ionicons.css";
+
  //BASE (variables, mixins, colors, helpers, base)
 @import "./parts/base/_colors.scss";
 @import "./parts/base/_helpers.scss";

@@ -39,19 +39,15 @@ gulp.task("html", () => {
 /*Task for CSS*/
 gulp.task("css", () => {
   gulp
-    .src("./src/css/main.scss")
+    .src(["./src/css/main.scss",
+          "./node_modules/font-awesome/scss/font-awesome.scss",
+          "./node_modules/ionicons/dist/scss/ionicons.scss"
+    ])
     .pipe(sourcemaps.init())
-    .pipe(
-      sass({ outputStyle: "compressed" }).on("error", function(err) {
+    .pipe(sass({ outputStyle: "compressed" }).on("error", function(err) {
         return notify().write(err);
-      })
-    )
-    .pipe(
-      autoprefixer({
-        browsers: ["last 2 versions"],
-        cascade: false
-      })
-    )
+      }))
+    .pipe(autoprefixer({ browsers: ["last 2 versions"], cascade: false }))
     .pipe(sourcemaps.write("."))
     .pipe(gulp.dest("./build/css"))
     .pipe(reload({ stream: true }));
@@ -99,7 +95,10 @@ gulp.task("image", () => {
 /* Task for Fonts */
 gulp.task("fonts", () => {
   gulp
-    .src("./src/fonts/**/*.*")
+    .src(["./src/fonts/**/*.*",
+           "node_modules/font-awesome/fonts/*",
+           "node_modules/ionicons/dist/fonts/*"
+    ])
     .pipe(newer("./build/fonts/"))
     .pipe(gulp.dest("./build/fonts/"))
     .pipe(reload({ stream: true }));
