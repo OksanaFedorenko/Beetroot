@@ -1,16 +1,16 @@
 .feature {
   width: 100%;
-  min-height: 560px;
-  //padding: 80px 74px 150px 340px;
+  min-height: 500px;
+  padding-top: 55px;
   color: $black;
   &__wrapper {
-    width: 100%;
-    min-height: 560px;
+    max-width: 100%;
+    min-height: 500px;
     position: relative;
   }
   &__text {
-    width: 310px;
-    height: 520px;
+    width: 270px;
+    height: 500px;
   }
   &__subtitle {
      color: $coral;
@@ -21,14 +21,17 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 28px;
     font-weight: 700;
+    margin-bottom: 20px;
   }
   &__description {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: $textGray;
-    line-height: 28px;
+    line-height: 26px;
+    margin-bottom: 30px;
   }
   &__img {
+    max-width: 300px;
     img {
       width: 100%;
       height: auto;
@@ -37,34 +40,73 @@
     }
   }
   &__item {
-    width: 370px;
+    max-width: 300px;
+    margin-right: 25px;
     height: 520px;
 
     &-wrap {
       display: flex;
-      width: 1520px;
+      max-width: 1280px;
       justify-content: space-between;
       position: absolute;
-      top: -110px;
-      left: 0;
+      top: -160px;
+      right: -150px;
     }
     &-title {
-      font-family: 'Montserrat',
-      sans-serif;
-      font-size: 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
       font-weight: 700;
+      height: 76px;
+      padding-top: 24px;
       text-align: center;
+      border-right: 2px solid $lightGray;
+      border-bottom: 2px solid $lightGray;
     }
     &-info {
       display: flex;
+      width: 100%;
+      height: 52px;
+      border-right: 2px solid $lightGray;
+      border-bottom: 2px solid $lightGray;
+      border-radius: 3px;
+      align-items: baseline;
+      justify-content: space-between;
+      padding: 0 10px;
+      //padding-top: 20px;
+    }
+    &-btn {
+      @include size (100px, 25px);
+      @include button ($coral, $white);
+      border-radius: 2px;
+      border: none;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
     }
   }
   &__rating {
-
+     font-size: 14px;
+     font-weight: bold;
+     font-family: 'Montserrat', sans-serif;
   }
   &__stars {
+    width: 100px;
     display: flex;
-    color: $coral;
+    //color: $coral;
     font-size: 20px;
+    i {
+      color: red;
+      width: 30px;
+      height: 30px;
+      font-size: 10px;
+      font-family: 'Ionicons';
+    }
+  }
+  &__btn {
+      @include size (170px, 40px);
+      @include button ($coral, $white);
+      border-radius: 5px;
+      border: none;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
   }
 }

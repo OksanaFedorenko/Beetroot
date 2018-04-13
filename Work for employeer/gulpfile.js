@@ -39,9 +39,11 @@ gulp.task("html", () => {
 /*Task for CSS*/
 gulp.task("css", () => {
   gulp
-    .src(["./src/css/main.scss",
-          "./node_modules/font-awesome/scss/font-awesome.scss",
-          "./node_modules/ionicons/dist/scss/ionicons.scss"
+    .src([
+      "./node_modules/font-awesome/scss/font-awesome.scss",
+      "./node_modules/ionicons/dist/scss/ionicons.scss",
+      "./node_modules/slick-carousel/slick/slick.scss",
+      "./src/css/main.scss"
     ])
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: "compressed" }).on("error", function(err) {
