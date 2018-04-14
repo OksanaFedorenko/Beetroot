@@ -1,0 +1,152 @@
+.top-tour {
+  width: 100%;
+  min-height: 1351px;
+  //background: rgba(40,40,40,.5);
+  background: url('./../img/Layer33.jpg') center no-repeat;
+  padding: 144px 0;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  &__title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 66px;
+    color: $white;
+    text-transform: capitalize;
+  }
+  &__subtitle {
+      font-family: 'Segoe Script',
+      sans-serif;
+      font-size: 24px;
+      color: $coral;
+      text-transform: capitalize;
+  }
+  &__form {
+    max-width: 1170px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    border: 15px solid $inputGray;
+  }
+  &__inputtext {
+    max-width: 284px;
+  }
+  &__inputdate {
+    max-width: 250px;
+    border-left: 1px solid $inputGray;
+  }
+  &__select {
+    max-width: 184px;
+    border-left: 1px solid $inputGray;
+    select {
+      height: 100%;
+    }
+  }
+}
+
+.slider2 {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  margin-bottom: 150px;
+  //padding-left: 10px;
+  &__item-wrapper {
+    width: 285px;
+    height: 530px;
+    background: $white;
+    border-radius: 10px;
+  }
+  &__item {
+     //border-radius: 10px;
+  }
+  &__img {
+     width: 100%;
+    
+    img {
+      width: 100%;
+      object-fit: contain;
+       border-top-right-radius: 10px;
+       border-top-left-radius: 10px;
+
+    }
+  }
+  &__description {
+    border-bottom: 2px solid $lightGray;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  &__text {
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    &-title {
+       font-family: 'Montserrat', sans-serif;
+       color: $black;
+       font-size: 18px;
+       font-weight: 600;
+    }
+    &-gray {
+      color: $textGray;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  &__rating {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .rating-stars {
+      width: 120px;
+      margin-bottom: 10px;
+      color: red;
+    }
+    .rating-title {
+      margin-right: 10px;
+    }
+  }
+  &__info-wrap {
+    width: 68px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+  }
+  &__price {
+    display: flex;
+    flex-direction: column;
+    .high-price {
+       color: $coral;
+       font-size: 14px;
+       text-decoration: line-through;
+       font-weight: bold;
+    }
+    .low-price {
+      color: $blue;
+      font-size: 22px;
+      font-weight: bold;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    //flex-direction: column;
+    .star {
+      width: 10px;
+      //height: 20px;
+      color: $coral;
+      font-weight: bold;
+      text-align: right;
+    
+    }
+  }
+  &__btn {
+    @include size (100px, 30px);
+    @include button ($coral, $white);
+    border: none;
+    border-radius: 3px;
+  }
+}
+
+/*.slick-slide,.slick-current,.slick-active,.slick-center {
+  width: 290px !important;
+}*/

@@ -40,9 +40,8 @@ gulp.task("html", () => {
 gulp.task("css", () => {
   gulp
     .src([
-      "./node_modules/font-awesome/scss/font-awesome.scss",
-      "./node_modules/ionicons/dist/scss/ionicons.scss",
       "./node_modules/slick-carousel/slick/slick.scss",
+      "//node_modules/slick-carousel/slick/slick-theme.scss",
       "./src/css/main.scss"
     ])
     .pipe(sourcemaps.init())
@@ -97,10 +96,7 @@ gulp.task("image", () => {
 /* Task for Fonts */
 gulp.task("fonts", () => {
   gulp
-    .src(["./src/fonts/**/*.*",
-           "node_modules/font-awesome/fonts/*",
-           "node_modules/ionicons/dist/fonts/*"
-    ])
+    .src(["./src/fonts/**/*.*"])
     .pipe(newer("./build/fonts/"))
     .pipe(gulp.dest("./build/fonts/"))
     .pipe(reload({ stream: true }));
