@@ -1,0 +1,38 @@
+.satisfices {
+  width: 100%;
+  min-height: 300px;
+  background: $coral;
+  font-family: 'Montserrat',
+  sans-serif;
+  color: $white;
+  &__wrapper {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: row;
+    width: 240px;
+  }
+  &__img {
+    width: 60px;
+    height: 60px;
+    padding-top: 5px;
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    //flex-direction: column;
+    width: 150px;
+    padding-left: 10px;
+    span {
+      font-size: 36px;
+      font-weight: bold;
+    }
+  }
+}
+
+

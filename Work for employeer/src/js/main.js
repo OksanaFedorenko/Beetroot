@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
 
  /* $('#slider1').slick({
@@ -100,6 +101,6 @@ $(document).ready(function () {
     for (var i = 0; i < elements.length; i++) {
       console.log(elements[i]); 
     }*/
-  
+ 
 
 });

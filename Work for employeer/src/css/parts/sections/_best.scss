@@ -1,0 +1,90 @@
+.best {
+  width: 100%;
+  min-height: 1292px;
+  background: url('./../img/Layer41.jpg') top no-repeat;
+  padding: 144px 0;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: $textGray;
+  &__title {
+    font-size: 28px;
+    font-weight: 600;
+    color: $black;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+  }
+  &__subtitle {
+    font-family: 'Segoe Script', sans-serif;
+    font-size: 24px;
+    color: $coral;
+    text-transform: capitalize;
+  }
+  &__text {
+     margin-bottom: 74px;
+  }
+  &__continent-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 790px;
+    justify-content: space-between;
+  }
+  &__continent {
+    display: flex;
+    max-width: 570px;
+    height: 200px; 
+  }
+  &__img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid $lightGray;
+    img {
+      //width: 100%;
+      object-fit: cover;
+      margin: 0 auto;
+      padding-top: 30px;
+    }
+  }
+  &__links {
+     max-width: 340px;
+     font-size: 16px;
+     line-height: 32px;
+     padding: 10px 0 0 30px;
+     text-align: left;
+  }
+  &__links-title {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: left;
+     transition: all .3 ease-in-out;
+    a {
+      color: $black;
+    }
+    &:hover {
+      text-decoration: underline;
+       transition: all .3 ease-in-out;
+    }
+  }
+  &__link {
+    position: relative;
+    margin-right: 15px;
+    color: $textGray;
+    font-weight: 600;
+    transition: all .3 ease-in-out;
+    a {
+      color: $textGray;
+    }
+    &:before {
+      position: absolute;
+      content: "";
+      width: 10px;
+      height: 10px;
+      border: 2px solid $blue;
+      border-radius: 50%;
+      top: 25%;
+      left: -12px;
+    }
+    &:hover {
+      color: $coral;
+    }
+  }
+}
