@@ -79,6 +79,7 @@
 	background: none;
 	-webkit-flex: none;
 	flex: none;
+	top: 20%;
 }
 
 .action:focus {

@@ -11,7 +11,7 @@ $(document).ready(function () {
       $("#slider1").slick({
         dots: false,
         nextArrow:
-          '<button type="button" class="slick-next"> <i class= "fa fa-chevron-right" ></i> </button>',
+          '<button type="button" class="slick-next"> <i class= "icon ion-ios-play-outline"></i> </button>',
         prevArrow:
           '<button type="button" class="slick-prev"> <i class= "fa fa-chevron-left" ></i> </button>',
         infinite: false,
@@ -86,15 +86,12 @@ $(document).ready(function () {
   /*function doOverlay () {
       var Elem = document.getElementById("slider2");
       var arr = [];
-      var elements = Elem.getAttribute("data-slick-index").value;
-      for (var i = 0; i<elements
+      var elements = 
+  
 
 
 
-      if (elements >= 2 || elements <= -2) {
-        elements.classList.add('overlay');
-      }
-  }
+    
 
     /*var elements = document.querySelectorAll("#slider2 > .slick-slide");
 

@@ -183,8 +183,16 @@
     border: none;
     border-radius: 3px;
   }
+  &__overlay {
+    position: absolute;
+
+  }
 }
 
 /*.slick-slide,.slick-current,.slick-active,.slick-center {
   width: 290px !important;
+}*/
+
+/*#slider2 .slick-list .slick-track .slick-active:first-of-type {
+  
 }*/

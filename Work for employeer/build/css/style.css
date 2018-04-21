@@ -80,6 +80,8 @@
 	background: none;
 	-webkit-flex: none;
 	flex: none;
+	top: 750px;
+	left: -400px;
 }
 
 .action:focus {
@@ -113,7 +115,7 @@
 .action--close {
 	line-height: 1;
 	position: absolute;
-	z-index: 3000;
+	z-index: 5000;
 	top: 30px;
 	right: 30px;
 	width: 60px;
@@ -301,28 +303,3 @@ measure so that we ensure a filling of the screen.
 	}
 }
 
-/* Header */
-.codrops-header {
-	padding: 2em 1em 0;
-	text-align: center;
-}
-
-.codrops-header h1 {
-	font-size: 2.25em;
-	font-weight: normal;
-	line-height: 1;
-	margin: 0.5em 0 0;
-	letter-spacing: -1px;
-}
-
-.codrops-header h1 span {
-	font-size: 0.65em;
-	display: block;
-	padding: 0.5em 0 1em;
-}
-
-@media screen and (max-width: 40em) {
-	.codrops-header h1 {
-		font-size: 1.8em;
-	}
-}
