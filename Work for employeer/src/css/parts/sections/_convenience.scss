@@ -35,6 +35,7 @@
     background: $white;
     padding: 25px;
     text-align: left;
+    border: 1px solid $inputGray;
     &-title {
       font-family: 'Montserrat', sans-serif;
       font-size: 24px;
@@ -57,9 +58,10 @@
      height: auto;
      position: relative;
      margin-bottom: 150px;
+     font-family: 'Montserrat',
+     sans-serif;
     &__item {
-       
-       
+        
     }
     &__item-wrap {
         width: 370px;
@@ -70,6 +72,7 @@
         justify-content: center;
         margin-right: 30px;
         padding: 20px;
+         border: 1px solid $inputGray;
         img {
           display: block;
           margin: 0 auto;
@@ -82,6 +85,16 @@
       width: 80px;
       margin: 0 auto;
       margin-bottom: 30px;
+    }
+    &__title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    &__text {
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      color: $textGray;
+      line-height: 28px;
     }
     
 }  
@@ -105,9 +118,9 @@
   z-index: 10;
 }
 
-.slider .slick-arrow:hover {
+/*.slider .slick-arrow:hover {
   color: $black;
-}
+}*/
 
 .slider .slick-prev {
   left: -50px;
@@ -117,13 +130,25 @@
   right: -30px;
 }
 
-.fa-chevron-left,
+.slick-next, .slick-prev {
+  @include button($coral, $white);
+  font-weight: 400;
+}
+
+.slick-next {
+  padding-left: 3px;
+}
+.slick-prev {
+  padding-right: 1px;
+}
+
+/*.fa-chevron-left,
 .fa-chevron-right {
-  color: gray;
+  color: $white;
   &:hover {
     color: $black;
   }
-}
+}*/
   
   
   

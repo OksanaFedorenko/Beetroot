@@ -3,7 +3,7 @@
   min-height: 1166px;
   background: url('./../img/Layer211.png') center no-repeat;
   position: relative;
-  z-index: 550;
+  z-index: 2000;
   margin-top: -20px;
   &__layer {
      position: absolute;
@@ -15,4 +15,9 @@
      background: rgba(24, 180, 248, .5);
      z-index: 600;
   }
+}
+
+.play-btn {
+  top: 750px;
+  left: -400px;
 }
