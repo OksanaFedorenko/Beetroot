@@ -160,7 +160,8 @@ body {
   height: 737px;
   color: #fff;
   font-family: 'Open Sans', sans-serif;
-  padding-top: 90px; }
+  padding-top: 90px;
+  background-size: cover; }
   .home__text-wrapper {
     width: 660px;
     height: 380px;
@@ -211,7 +212,7 @@ body {
 .portfolio {
   background-color: #f3f3f3;
   width: 100%;
-  min-height: 1410px;
+  max-height: 1410px;
   color: #81868e;
   font-family: 'Open sans', sans-serif;
   padding-top: 84px; }
